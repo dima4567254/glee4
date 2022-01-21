@@ -1,0 +1,244 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1;
+    color: $default;
+    letter-spacing: 0.6px;
+    display: flex;
+    font-weight: 700;
+    font-family: $dmsans;
+    flex-direction: column;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.title {
+    font-size: 36px;
+    color: $black2;
+
+    @media (max-width: 576px) {
+        font-size: 27px;
+    }
+}
+
+.main {
+    flex-grow: 1;
+}
+
+.container {
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+    &--sm {
+        max-width: 1200px;
+    }
+
+    &--terms {
+        max-width: 1230px;
+    }
+}
+
+.btn {
+    border: none;
+    font-family: $rubik;
+    transition: background-color 0.5s;
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.checkbox-hidden {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    position: absolute;
+}
+
+.comments__link,
+.comments__reply,
+.contact__item,
+.contact__link,
+.contact__name,
+.contact__email,
+.contact__textarea,
+.contact__button,
+.catalog-category__checkbox,
+.jq-selectbox__select-text,
+.catalog-brand__checkbox,
+.design__subtitle,
+.video,
+.insights__link,
+.insights__img,
+.insights__news,
+.insights__subtitle,
+.modal__input,
+.modal__button,
+.modal__link,
+.modal__btn,
+.description-products__link,
+.product-detalis__button,
+.jq-number__spin.minus,
+.jq-number__spin.plus .recent-products__img,
+.recent-products__subtitle,
+.recent-products__link,
+.product-tabs__link,
+.team__link-svg,
+.team__link,
+.trendy__link,
+.week-products__icon,
+.filters__btn,
+.blog__img,
+.blog__title,
+.blog__box,
+.blog__input,
+.blog__button,
+.blog-info__avtar,
+.blog-one-form__name,
+.blog-one-form__email,
+.blog-one-form__textarea,
+.blog-one-form__button,
+.breadcrumbs__link,
+.footer__link,
+.footer__input,
+.footer__btn,
+.footer__item-nav,
+.footer__link-nav,
+.header__link,
+.header__item,
+.pagination__item,
+.pagination__link,
+.recent-posts__box,
+.recent-posts__img,
+.recent-posts__text,
+.recent-posts__link,
+.btn {
+    &:active {
+        color: $red;
+    }
+}
+
+.jq-selectbox__select-text,
+.comments__link,
+.comments__reply,
+.contact__item,
+.contact__link,
+.contact__name,
+.contact__email,
+.contact__textarea .contact__button,
+.catalog-category__checkbox,
+.catalog-brand__checkbox,
+.design__subtitle,
+.video,
+.insights__link,
+.insights__news,
+.insights__subtitle,
+.modal__label,
+.modal__input,
+.modal__button,
+.modal__link,
+.modal__btn,
+.description-products__link,
+.product-detalis__button,
+.jq-number__spin.minus,
+.jq-number__spin.plus,
+.recent-products__img,
+.recent-products__subtitle,
+.recent-products__link,
+.product-tabs__link,
+.team__link-svg,
+.team__link,
+.trendy__link,
+.week-products__icon,
+.filters__btn,
+.blog__img,
+.blog__title,
+.blog__box,
+.blog__input,
+.blog__button,
+.blog-info__avtar,
+.blog-one-form__name,
+.blog-one-form__email,
+.blog-one-form__textarea,
+.blog-one-form__button,
+.blog-one__img,
+.breadcrumbs__link,
+.header__link,
+.header__item,
+.pagination__item,
+.pagination__link,
+.recent-posts__box,
+.recent-posts__img,
+.recent-posts__text,
+.recent-posts__link,
+.btn {
+    &:focus {
+        color: $green;
+    }
+}
+
+.catalog-brand__checkbox,
+.catalog-category__checkbox,
+.contact__button,
+.insights__news,
+.modal__input,
+.modal__button,
+.modal__btn,
+.product-detalis__button,
+.jq-number__spin.minus,
+.jq-number__spin.plus,
+.product-tabs__link,
+.team__link-svg,
+.team__link,
+.blog__box,
+.blog__input,
+.blog__button,
+.blog-one-form__button,
+.pagination__item,
+.pagination__link {
+    &:hover {
+        background-color: $ac;
+    }
+}
+
+.jq-selectbox__select-text,
+.insights__link,
+.insights__subtitle,
+.modal__label,
+.modal__link,
+.recent-products__subtitle,
+.recent-products__link,
+.filters__btn,
+.blog__title,
+.blog-info__avtar,
+.blog-one__img,
+.breadcrumbs__link,
+.footer__link,
+.footer__input,
+.footer__item-nav,
+.footer__link-nav,
+.recent-posts__box,
+.recent-posts__text,
+.recent-posts__link {
+    &:hover {
+        color: $ac;
+    }
+}

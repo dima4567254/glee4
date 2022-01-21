@@ -1,0 +1,1435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product list 1</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="https://yoursite.ru/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<!--возможно не правильно задал титулы-->
+
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="menu">
+                <a class="logo__link" href="#">
+                    <img class="logo" src="images/logo.png" alt="logo">
+                </a>
+                <button class="menu__btn" type="button">
+                    <span></span>
+                    <span class="sr-only">open menu</span>
+                </button>
+                <ul class="menu__items">
+                    <li class="menu__item">
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link menu__link--active" href="#">
+                            Home+
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="abaut-us.html">
+                            About
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#services">
+                            Services
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="">
+                            Pages+
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="">
+                            News
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="contacts.html">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+                <div class="nav">
+                    <a class="nav__item nav__item--search" href="#">
+                        <svg class="nav__svg" xmlns="http://www.w3.org/2000/svg" width="15.28" height="15.281"
+                            viewBox="0 0 15.28 15.281">
+                            <path fill="#243f4d" fill-rule="evenodd"
+                                d="M1547.7,72.076a0.617,0.617,0,0,1,.75.485,2.583,2.583,0,0,0,.78,1.489,3.036,3.036,0,0,0,1.49.777,0.636,0.636,0,0,1,.49.743,0.649,0.649,0,0,1-.72.515,4.21,4.21,0,0,1-2.14-1.13,4.164,4.164,0,0,1-1.13-2.136A0.6,0.6,0,0,1,1547.7,72.076ZM1550.98,66a6.267,6.267,0,0,1,6.28,6.257,6.136,6.136,0,0,1-.57,2.6l2.34,2.036c1.7,1.746.74,3.266,0.29,3.717-0.42.454-1.99,1.414-3.73-.292l-2.06-2.35A6.261,6.261,0,1,1,1550.98,66Zm5.55,13.517a1.352,1.352,0,0,0,1.88.226,1.313,1.313,0,0,0-.23-1.874l-2.16-1.88a6.236,6.236,0,0,1-1.37,1.34Zm-5.55-2.312a4.948,4.948,0,1,0-4.97-4.948A4.963,4.963,0,0,0,1550.98,77.2Z"
+                                transform="translate(-1544.72 -66)" />
+                        </svg>
+                        <span class="sr-only">product search</span>
+                    </a>
+                    <a class=" nav__item nav__item--heart" href="#">
+                        <svg class="nav__hert" xmlns="http://www.w3.org/2000/svg" width="17.87" height="15.531"
+                            viewBox="0 0 17.87 15.531">
+                            <path fill="#243f4d" fill-rule="evenodd"
+                                d="M1648.91,86.245a0.731,0.731,0,0,1-.28-0.056c-0.35-.15-8.65-3.749-8.65-10.76a28.181,28.181,0,0,0,13.05-4.707,4.817,4.817,0,0,1,4.81,4.684c0,7.034-8.29,10.634-8.65,10.783A0.7,0.7,0,0,1,1648.91,86.245Zm-4.11-14.138a3.427,3.427,0,0,0-3.41,3.346c0,5.407,6.13,8.662,7.52,9.334,1.4-.672,7.52-3.93,7.52-9.358a3.406,3.406,0,0,0-6.81.024,0.709,0.709,0,0,1-.71.669h0a0.694,0.694,0,0,1-.7-0.669A3.427,3.427,0,0,0,1644.8,72.106Z"
+                                transform="translate(-1639.97 -70.719)" />
+                        </svg>
+                        <span class="nav__num">0</span>
+                        <span class="sr-only">liked week-products</span>
+                    </a>
+                    <a class=" nav__item nav__item--basket" href="#">
+                        <svg class="nav__basket" xmlns="http://www.w3.org/2000/svg" width="18.94" height="16.969"
+                            viewBox="0 0 18.94 16.969">
+                            <path fill="#243f4d" fill-rule="evenodd"
+                                d="M1721.53,85.978a2.073,2.073,0,1,1,0-4.147h0a2.056,2.056,0,0,1,1.46.6,2.03,2.03,0,0,1,.61,1.466A2.071,2.071,0,0,1,1721.53,85.978Zm0-2.963h0a0.889,0.889,0,1,0,.34,1.71,0.9,0.9,0,0,0,.55-0.824,0.92,0.92,0,0,0-.26-0.629A0.9,0.9,0,0,0,1721.53,83.015Zm8.39,2.963a2.045,2.045,0,0,1-1.46-.607,2.068,2.068,0,0,1,1.46-3.54h0a1.953,1.953,0,0,1,1.47.6,2.085,2.085,0,0,1-.67,3.383A2.093,2.093,0,0,1,1729.92,85.978Zm0-2.963h0a0.978,0.978,0,0,0-.82.548,0.887,0.887,0,0,0,1.16,1.161,0.891,0.891,0,0,0,.29-1.452A0.9,0.9,0,0,0,1729.92,83.015Zm-11.27.164a0.562,0.562,0,0,1-.25-0.056,0.59,0.59,0,0,1-.29-0.787,3.686,3.686,0,0,1,3.05-2.151l-1.05-5.391a0.591,0.591,0,1,1,1.16-.228l1.09,5.578h9.43l1.8-6.771h-13.3a4.346,4.346,0,0,1-4.28-3.693,0.587,0.587,0,0,1,.49-0.673,0.6,0.6,0,0,1,.68.5,3.159,3.159,0,0,0,3.11,2.682h14.07a0.582,0.582,0,0,1,.47.232,0.594,0.594,0,0,1,.11.513l-2.13,7.956a0.59,0.59,0,0,1-.57.44h-10.36a0.03,0.03,0,0,0-.02,0,2.66,2.66,0,0,0-2.68,1.51A0.586,0.586,0,0,1,1718.65,83.178Z"
+                                transform="translate(-1716 -69)" />
+                        </svg>
+                        <span class="nav__num">0</span>
+                        <span class="sr-only">cart</span>
+                    </a>
+                    <a class=" nav__item nav__item--burger" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20.03" height="20.031"
+                            viewBox="0 0 20.03 20.031">
+                            <path fill="#ffffff" fill-rule="evenodd"
+                                d="M1813.15,67.881a2.146,2.146,0,1,1,2.14-2.145A2.145,2.145,0,0,1,1813.15,67.881Zm0,7.869a2.146,2.146,0,1,1,2.14-2.147A2.146,2.146,0,0,1,1813.15,75.75Zm0,7.868a2.146,2.146,0,1,1,2.14-2.146A2.145,2.145,0,0,1,1813.15,83.618Zm7.86-15.737a2.146,2.146,0,1,1,2.15-2.145A2.143,2.143,0,0,1,1821.01,67.881Zm0,7.869a2.146,2.146,0,1,1,2.15-2.147A2.144,2.144,0,0,1,1821.01,75.75Zm0,7.868a2.146,2.146,0,1,1,2.15-2.146A2.143,2.143,0,0,1,1821.01,83.618Zm7.87-15.737a2.146,2.146,0,1,1,2.15-2.145A2.143,2.143,0,0,1,1828.88,67.881Zm0,7.869a2.146,2.146,0,1,1,2.15-2.147A2.144,2.144,0,0,1,1828.88,75.75Zm0,7.868a2.146,2.146,0,1,1,2.15-2.146A2.143,2.143,0,0,1,1828.88,83.618Z"
+                                transform="translate(-1811 -63.594)" />
+                        </svg>
+                        <span class="sr-only">menu</span>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="breadcrumbs breadcrumbs__product-list">
+            <h2 class="breadcrumbs__title">
+                Product list 1
+            </h2>
+            <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">
+                        Home
+                    </a>
+                    <span class="breadcrumbs__delimiter">/</span>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">
+                        Product list 1
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="catalog-main">
+            <h2 class="sr-only">catalog</h2>
+            <div class="container container--sm">
+                <div class="catalog-main__inner">
+                    <div class="catalog-main__filters">
+                        <div class="catalog-category catalog-category-item">
+                            <h3 class="catalog-title catalog__title">
+                                category
+                            </h3>
+                            <form class="catalog-category__form">
+                                <label class="catalog-category__label" for="checkbox">
+                                    <input class="catalog-category__input checkbox-hidden" type="checkbox" id="checkbox"
+                                        checked>
+                                    <span class="catalog-category__checkbox">
+                                        <span>Chair</span>
+                                        <img src="images/icons/arrow-icon.svg" alt="arrow-icon">
+                                    </span>
+                                </label>
+                                <label class="catalog-category__label" for="checkbox2">
+                                    <input class="catalog-category__input checkbox-hidden" type="checkbox"
+                                        id="checkbox2">
+                                    <span class="catalog-category__checkbox">
+                                        <span>Table</span>
+                                        <img src="images/icons/arrow-icon.svg" alt="arrow-icon">
+                                    </span>
+                                </label>
+                                <label class="catalog-category__label" for="checkbox3">
+                                    <input class="catalog-category__input checkbox-hidden" type="checkbox"
+                                        id="checkbox3">
+                                    <span class="catalog-category__checkbox">
+                                        <span>Lamp</span>
+                                        <img src="images/icons/arrow-icon.svg" alt="arrow-icon">
+                                    </span>
+                                </label>
+                                <label class="catalog-category__label" for="checkbox4">
+                                    <input class="catalog-category__input checkbox-hidden" type="checkbox"
+                                        id="checkbox4">
+                                    <span class="catalog-category__checkbox">
+                                        <span>Watch</span>
+                                        <img src="images/icons/arrow-icon.svg" alt="arrow-icon">
+                                    </span>
+                                </label>
+                                <label class="catalog-category__label" for="checkbox5">
+                                    <input class="catalog-category__input checkbox-hidden" type="checkbox"
+                                        id="checkbox5">
+                                    <span class="catalog-category__checkbox">
+                                        <span>Clock</span>
+                                        <img src="images/icons/arrow-icon.svg" alt="arrow-icon">
+                                    </span>
+                                </label>
+                            </form>
+                        </div>
+                        <div class="catalog-category__prise catalog-category-item">
+                            <h3 class="catalog-title catalog__title">
+                                Price
+                            </h3>
+                            <form class="catalog-category__form">
+                                <label class="catalog-category__label">
+                                    <input class="prise" type="text" data-min="100.00" data-max=" 500.00"
+                                        data-from=" 200" data-to=" 400">
+                                </label>
+                            </form>
+                            <div class="catalog-brand catalog-category-item">
+                                <h3 class="catalog-title">
+                                    Brand
+                                </h3>
+                                <form class="catalog-brand__form" action="#">
+                                    <label class="catalog-brand__label" for="checkbox6">
+                                        <input class="catalog-brand__input checkbox-hidden" type="checkbox"
+                                            id="checkbox6" checked>
+                                        <span class="catalog-brand__checkbox">
+                                            <span class="catalog-brand__info">Rfl</span>
+                                            <span class="catalog-brand__number">(10)</span>
+                                        </span>
+                                    </label>
+                                    <label class="catalog-brand__label" for="checkbox7">
+                                        <input class="catalog-brand__input checkbox-hidden" type="checkbox"
+                                            id="checkbox7">
+                                        <span class="catalog-brand__checkbox">
+                                            <span class="catalog-brand__info">Brothers</span>
+                                            <span class="catalog-brand__number">(21)</span>
+                                        </span>
+                                    </label>
+                                    <label class="catalog-brand__label" for="checkbox8">
+                                        <input class="catalog-brand__input checkbox-hidden" type="checkbox"
+                                            id="checkbox8">
+                                        <span class="catalog-brand__checkbox">
+                                            <span class="catalog-brand__info">Regal</span>
+                                            <span class="catalog-brand__number">(3)</span>
+                                        </span>
+                                    </label>
+                                    <label class="catalog-brand__label" for="checkbox9">
+                                        <input class="catalog-brand__input checkbox-hidden" type="checkbox"
+                                            id="checkbox9">
+                                        <span class="catalog-brand__checkbox">
+                                            <span class="catalog-brand__info">Nadia</span>
+                                            <span class="catalog-brand__number">(14)</span>
+                                        </span>
+                                    </label>
+                                    <label class="catalog-brand__label" for="checkbox10">
+                                        <input class="catalog-brand__input checkbox-hidden" type="checkbox"
+                                            id="checkbox10">
+                                        <span class="catalog-brand__checkbox">
+                                            <span class="catalog-brand__info">Otobi</span>
+                                            <span class="catalog-brand__number">(6)</span>
+                                        </span>
+                                    </label>
+                                </form>
+                            </div>
+
+                            <div class="recent-products catalog-category-item">
+                                <h3 class="catalog-title">
+                                    Recent products
+                                </h3>
+                                <ul class="recent-products__list">
+                                    <li class="recent-products__item">
+                                        <a class="recent-products__link" href="#">
+                                            <img class="recent-products__img"
+                                                src="images/recent-products/recent-products1.jpg" alt="products">
+                                        </a>
+                                        <div class="recent-products__comtent">
+                                            <a class="recent-products__link" href="#">
+                                                <h4 class="recent-products__subtitle">
+                                                    Pendant lamp
+                                                </h4>
+                                            </a>
+                                            <div class="recent-products__star" data-rateyo-rating="4">
+                                            </div>
+                                            <a class="recent-products__link" href="#">23$</a>
+                                        </div>
+                                    </li>
+                                    <li class="recent-products__item">
+                                        <a class="recent-products__link" href="#">
+                                            <img class="recent-products__img"
+                                                src="images/recent-products/recent-products2.jpg" alt="products">
+                                        </a>
+                                        <div class="recent-products__comtent">
+                                            <a class="recent-products__link" href="#">
+                                                <h4 class="recent-products__subtitle">
+                                                    Pendant lamp
+                                                </h4>
+                                            </a>
+                                            <div class="recent-products__star" data-rateyo-rating="4">
+                                            </div>
+                                            <a class="recent-products__link" href="#">23$</a>
+                                        </div>
+                                    </li>
+                                    <li class="recent-products__item">
+                                        <a class="recent-products__link" href="#">
+                                            <img class="recent-products__img"
+                                                src="images/recent-products/recent-products3.jpg" alt="products">
+                                        </a>
+                                        <div class="recent-products__comtent">
+                                            <a class="recent-products__link" href="#">
+                                                <h4 class="recent-products__subtitle">
+                                                    Pendant lamp
+                                                </h4>
+                                            </a>
+                                            <div class="recent-products__star" data-rateyo-rating="4">
+                                            </div>
+                                            <a class="recent-products__link" href="#">23$</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="week-products  week-products__product-list">
+                        <div class="filter-selects">
+                            <div class="filter-selects__buttons">
+                                <span class="filter-selects__view">View</span>
+                                <button class="filter-selects__button filter-selects__button--active button-grid"
+                                    type="button">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                                        <path id="grid" class="cls-1" fill="#8d8d8d"
+                                            d="M855,613.75h3.75V610H855v3.75ZM860.625,625h3.75v-3.75h-3.75V625ZM855,625h3.75v-3.75H855V625Zm0-5.625h3.75v-3.75H855v3.75Zm5.625,0h3.75v-3.75h-3.75v3.75ZM866.25,610v3.75H870V610h-3.75Zm-5.625,3.75h3.75V610h-3.75v3.75Zm5.625,5.625H870v-3.75h-3.75v3.75Zm0,5.625H870v-3.75h-3.75V625Z"
+                                            transform="translate(-855 -610)" />
+                                    </svg>
+                                </button>
+                                <button class="filter-selects__button button-list" type="button">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="15" viewBox="0 0 20 15">
+                                        <path id="list" class="cls-1" fill="#8d8d8d"
+                                            d="M885.007,610h4.422v4.172h-4.422V610Zm5.828,0h14.159v4.172H890.835V610Zm-5.828,5.413h4.422v4.172h-4.422v-4.172Zm5.828,0h14.159v4.172H890.835v-4.172Zm-5.828,5.414h4.422V625h-4.422v-4.171Zm5.828,0h14.159V625H890.835v-4.171Z"
+                                            transform="translate(-885 -610)" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <form class="filter-selects__form">
+                                <select class="filter-selects__sort">
+                                    <option class="" value="#">Sort By Default</option>
+                                    <option class="" value="#">2</option>
+                                    <option class="" value="#">3</option>
+                                    <option class="" value="#">4</option>
+                                </select>
+                                <select class="filter-selects__shov">
+                                    <option class="" value="#">Show 9</option>
+                                    <option class="" value="#">2</option>
+                                    <option class="" value="#">3</option>
+                                    <option class="" value="#">
+                                        DefaultSort By Default</option>
+                                </select>
+                            </form>
+                        </div>
+                        <ul class=" week-products-content week-products__content">
+                            <li class="week-products__item mix category-a">
+                                <article class="week-products__cart  products-cart">
+                                    <img class="week-products__img" src="images/filter-product/1.png"
+                                        alt="Wooden chair">
+                                    <ul class="week-products-list week-products__list">
+                                        <li class="week-products-list__icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="15.28" height="15.281"
+                                                viewBox="0 0 15.28 15.281">
+                                                <path fill="#a3bbc8" fill-rule="evenodd"
+                                                    d="M1547.7,72.076a0.617,0.617,0,0,1,.75.485,2.583,2.583,0,0,0,.78,1.489,3.036,3.036,0,0,0,1.49.777,0.636,0.636,0,0,1,.49.743,0.649,0.649,0,0,1-.72.515,4.21,4.21,0,0,1-2.14-1.13,4.164,4.164,0,0,1-1.13-2.136A0.6,0.6,0,0,1,1547.7,72.076ZM1550.98,66a6.267,6.267,0,0,1,6.28,6.257,6.136,6.136,0,0,1-.57,2.6l2.34,2.036c1.7,1.746.74,3.266,0.29,3.717-0.42.454-1.99,1.414-3.73-.292l-2.06-2.35A6.261,6.261,0,1,1,1550.98,66Zm5.55,13.517a1.352,1.352,0,0,0,1.88.226,1.313,1.313,0,0,0-.23-1.874l-2.16-1.88a6.236,6.236,0,0,1-1.37,1.34Zm-5.55-2.312a4.948,4.948,0,1,0-4.97-4.948A4.963,4.963,0,0,0,1550.98,77.2Z"
+                                                    transform="translate(-1544.72 -66)" />
+                                            </svg>
+                                            <span class="sr-only">product search</span>
+                                        </li>
+                                        <li class="week-products-list__icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18.94" height="16.969"
+                                                viewBox="0 0 18.94 16.969">
+                                                <path fill="#a3bbc8" fill-rule="evenodd"
+                                                    d="M1721.53,85.978a2.073,2.073,0,1,1,0-4.147h0a2.056,2.056,0,0,1,1.46.6,2.03,2.03,0,0,1,.61,1.466A2.071,2.071,0,0,1,1721.53,85.978Zm0-2.963h0a0.889,0.889,0,1,0,.34,1.71,0.9,0.9,0,0,0,.55-0.824,0.92,0.92,0,0,0-.26-0.629A0.9,0.9,0,0,0,1721.53,83.015Zm8.39,2.963a2.045,2.045,0,0,1-1.46-.607,2.068,2.068,0,0,1,1.46-3.54h0a1.953,1.953,0,0,1,1.47.6,2.085,2.085,0,0,1-.67,3.383A2.093,2.093,0,0,1,1729.92,85.978Zm0-2.963h0a0.978,0.978,0,0,0-.82.548,0.887,0.887,0,0,0,1.16,1.161,0.891,0.891,0,0,0,.29-1.452A0.9,0.9,0,0,0,1729.92,83.015Zm-11.27.164a0.562,0.562,0,0,1-.25-0.056,0.59,0.59,0,0,1-.29-0.787,3.686,3.686,0,0,1,3.05-2.151l-1.05-5.391a0.591,0.591,0,1,1,1.16-.228l1.09,5.578h9.43l1.8-6.771h-13.3a4.346,4.346,0,0,1-4.28-3.693,0.587,0.587,0,0,1,.49-0.673,0.6,0.6,0,0,1,.68.5,3.159,3.159,0,0,0,3.11,2.682h14.07a0.582,0.582,0,0,1,.47.232,0.594,0.594,0,0,1,.11.513l-2.13,7.956a0.59,0.59,0,0,1-.57.44h-10.36a0.03,0.03,0,0,0-.02,0,2.66,2.66,0,0,0-2.68,1.51A0.586,0.586,0,0,1,1718.65,83.178Z"
+                                                    transform="translate(-1716 -69)" />
+                                            </svg>
+                                            <span class="sr-only">cart</span>
+                                        </li>
+                                        <li class="week-products-list__icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="17.87" height="15.531"
+                                                viewBox="0 0 17.87 15.531">
+                                                <path fill="#a3bbc8" fill-rule="evenodd"
+                                                    d="M1648.91,86.245a0.731,0.731,0,0,1-.28-0.056c-0.35-.15-8.65-3.749-8.65-10.76a28.181,28.181,0,0,0,13.05-4.707,4.817,4.817,0,0,1,4.81,4.684c0,7.034-8.29,10.634-8.65,10.783A0.7,0.7,0,0,1,1648.91,86.245Zm-4.11-14.138a3.427,3.427,0,0,0-3.41,3.346c0,5.407,6.13,8.662,7.52,9.334,1.4-.672,7.52-3.93,7.52-9.358a3.406,3.406,0,0,0-6.81.024,0.709,0.709,0,0,1-.71.669h0a0.694,0.694,0,0,1-.7-0.669A3.427,3.427,0,0,0,1644.8,72.106Z"
+                                                    transform="translate(-1639.97 -70.719)" />
+                                            </svg>
+                                            <span class="sr-only">liked week-products</span>
+                                        </li>
+                                    </ul>
+                                    <div class="week-products__info">
+                                        <h5 class="week-products__subtitle">
+                                            Wooden radio
+                                        </h5>
+                                        <div class="week-products__price">
+                                            <span>$</span>29.00
+                                        </div>
+                                        <div class="week-products__star" data-rateyo-rating="4"></div>
+                                        <div class="week-products__cost">
+                                            23<span>$</span>
+                                        </div>
+                                        <div class="week-products__text">
+                                            <p>
+                                                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                                                labore
+                                                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                                exercitation
+                                            </p>
+                                        </div>
+                                        <a class="week-products__btn btn" href="#">
+                                            add to cart
+                                        </a>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="week-products__item mix category-a">
+                                <article class="week-products__cart  products-cart">
+                                    <img class="week-products__img" src="images/filter-product/2.png"
+                                        alt="Wooden chair">
+                                    <ul class="week-products-list week-products__list">
+                                        <li class="week-products-list__icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="15.28" height="15.281"
+                                                viewBox="0 0 15.28 15.281">
+                                                <path fill="#a3bbc8" fill-rule="evenodd"
+                                                    d="M1547.7,72.076a0.617,0.617,0,0,1,.75.485,2.583,2.583,0,0,0,.78,1.489,3.036,3.036,0,0,0,1.49.777,0.636,0.636,0,0,1,.49.743,0.649,0.649,0,0,1-.72.515,4.21,4.21,0,0,1-2.14-1.13,4.164,4.164,0,0,1-1.13-2.136A0.6,0.6,0,0,1,1547.7,72.076ZM1550.98,66a6.267,6.267,0,0,1,6.28,6.257,6.136,6.136,0,0,1-.57,2.6l2.34,2.036c1.7,1.746.74,3.266,0.29,3.717-0.42.454-1.99,1.414-3.73-.292l-2.06-2.35A6.261,6.261,0,1,1,1550.98,66Zm5.55,13.517a1.352,1.352,0,0,0,1.88.226,1.313,1.313,0,0,0-.23-1.874l-2.16-1.88a6.236,6.236,0,0,1-1.37,1.34Zm-5.55-2.312a4.948,4.948,0,1,0-4.97-4.948A4.963,4.963,0,0,0,1550.98,77.2Z"
+                                                    transform="translate(-1544.72 -66)" />
+                                            </svg>
+                                            <span class="sr-only">product search</span>
+                                        </li>
+                                        <li class="week-products-list__icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18.94" height="16.969"
+                                                viewBox="0 0 18.94 16.969">
+                                                <path fill="#a3bbc8" fill-rule="evenodd"
+                                                    d="M1721.53,85.978a2.073,2.073,0,1,1,0-4.147h0a2.056,2.056,0,0,1,1.46.6,2.03,2.03,0,0,1,.61,1.466A2.071,2.071,0,0,1,1721.53,85.978Zm0-2.963h0a0.889,0.889,0,1,0,.34,1.71,0.9,0.9,0,0,0,.55-0.824,0.92,0.92,0,0,0-.26-0.629A0.9,0.9,0,0,0,1721.53,83.015Zm8.39,2.963a2.045,2.045,0,0,1-1.46-.607,2.068,2.068,0,0,1,1.46-3.54h0a1.953,1.953,0,0,1,1.47.6,2.085,2.085,0,0,1-.67,3.383A2.093,2.093,0,0,1,1729.92,85.978Zm0-2.963h0a0.978,0.978,0,0,0-.82.548,0.887,0.887,0,0,0,1.16,1.161,0.891,0.891,0,0,0,.29-1.452A0.9,0.9,0,0,0,1729.92,83.015Zm-11.27.164a0.562,0.562,0,0,1-.25-0.056,0.59,0.59,0,0,1-.29-0.787,3.686,3.686,0,0,1,3.05-2.151l-1.05-5.391a0.591,0.591,0,1,1,1.16-.228l1.09,5.578h9.43l1.8-6.771h-13.3a4.346,4.346,0,0,1-4.28-3.693,0.587,0.587,0,0,1,.49-0.673,0.6,0.6,0,0,1,.68.5,3.159,3.159,0,0,0,3.11,2.682h14.07a0.582,0.582,0,0,1,.47.232,0.594,0.594,0,0,1,.11.513l-2.13,7.956a0.59,0.59,0,0,1-.57.44h-10.36a0.03,0.03,0,0,0-.02,0,2.66,2.66,0,0,0-2.68,1.51A0.586,0.586,0,0,1,1718.65,83.178Z"
+                                                    transform="translate(-1716 -69)" />
+                                            </svg>
+                                            <span class="sr-only">cart</span>
+                                        </li>
+                                        <li class="week-products-list__icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="17.87" height="15.531"
+                                                viewBox="0 0 17.87 15.531">
+                                                <path fill="#a3bbc8" fill-rule="evenodd"
+                                                    d="M1648.91,86.245a0.731,0.731,0,0,1-.28-0.056c-0.35-.15-8.65-3.749-8.65-10.76a28.181,28.181,0,0,0,13.05-4.707,4.817,4.817,0,0,1,4.81,4.684c0,7.034-8.29,10.634-8.65,10.783A0.7,0.7,0,0,1,1648.91,86.245Zm-4.11-14.138a3.427,3.427,0,0,0-3.41,3.346c0,5.407,6.13,8.662,7.52,9.334,1.4-.672,7.52-3.93,7.52-9.358a3.406,3.406,0,0,0-6.81.024,0.709,0.709,0,0,1-.71.669h0a0.694,0.694,0,0,1-.7-0.669A3.427,3.427,0,0,0,1644.8,72.106Z"
+                                                    transform="translate(-1639.97 -70.719)" />
+                                            </svg>
+                                            <span class="sr-only">liked week-products</span>
+                                        </li>
+                                    </ul>
+                                    <div class="week-products__info">
+                                        <h5 class="week-products__subtitle">
+                                            White chair
+                                        </h5>
+                                        <div class="week-products__price">
+                                            <span>$</span>29.00
+                                        </div>
+                                        <div class="week-products__star" data-rateyo-rating="4">
+                                        </div>
+                                        <div class="week-products__cost">
+                                            23<span>$</span>
+                                        </div>
+                                        <div class="week-products__text">
+                                            <p>
+                                                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                                                labore
+                                                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                                exercitation
+                                            </p>
+                                        </div>
+                                        <div class="week-products__links">
+                                            <a class="week-products__box week-products__box--active" href="#">
+                                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="18.94"
+                                                    height="16.969" viewBox="0 0 18.94 16.969">
+                                                    <path fill="#a7becb" fill-rule="evenodd"
+                                                        d="M1721.53,85.978a2.073,2.073,0,1,1,0-4.147h0a2.056,2.056,0,0,1,1.46.6,2.03,2.03,0,0,1,.61,1.466A2.071,2.071,0,0,1,1721.53,85.978Zm0-2.963h0a0.889,0.889,0,1,0,.34,1.71,0.9,0.9,0,0,0,.55-0.824,0.92,0.92,0,0,0-.26-0.629A0.9,0.9,0,0,0,1721.53,83.015Zm8.39,2.963a2.045,2.045,0,0,1-1.46-.607,2.068,2.068,0,0,1,1.46-3.54h0a1.953,1.953,0,0,1,1.47.6,2.085,2.085,0,0,1-.67,3.383A2.093,2.093,0,0,1,1729.92,85.978Zm0-2.963h0a0.978,0.978,0,0,0-.82.548,0.887,0.887,0,0,0,1.16,1.161,0.891,0.891,0,0,0,.29-1.452A0.9,0.9,0,0,0,1729.92,83.015Zm-11.27.164a0.562,0.562,0,0,1-.25-0.056,0.59,0.59,0,0,1-.29-0.787,3.686,3.686,0,0,1,3.05-2.151l-1.05-5.391a0.591,0.591,0,1,1,1.16-.228l1.09,5.578h9.43l1.8-6.771h-13.3a4.346,4.346,0,0,1-4.28-3.693,0.587,0.587,0,0,1,.49-0.673,0.6,0.6,0,0,1,.68.5,3.159,3.159,0,0,0,3.11,2.682h14.07a0.582,0.582,0,0,1,.47.232,0.594,0.594,0,0,1,.11.513l-2.13,7.956a0.59,0.59,0,0,1-.57.44h-10.36a0.03,0.03,0,0,0-.02,0,2.66,2.66,0,0,0-2.68,1.51A0.586,0.586,0,0,1,1718.65,83.178Z"
+                                                        transform="translate(-1716 -69)" />
+                                                </svg>
+                                                <span class="sr-only">basket</span>
+                                            </a>
+                                            <a class="week-products__box" href="#">
+                                                <svg class="week-products__icon" xmlns="http://www.w3.org/2000/svg"
+                                                    width="17.87" height="15.531" viewBox="0 0 17.87 15.531">
+                                                    <path fill="#a7becb" fill-rule="evenodd"
+                                                        d="M1648.91,86.245a0.731,0.731,0,0,1-.28-0.056c-0.35-.15-8.65-3.749-8.65-10.76a28.181,28.181,0,0,0,13.05-4.707,4.817,4.817,0,0,1,4.81,4.684c0,7.034-8.29,10.634-8.65,10.783A0.7,0.7,0,0,1,1648.91,86.245Zm-4.11-14.138a3.427,3.427,0,0,0-3.41,3.346c0,5.407,6.13,8.662,7.52,9.334,1.4-.672,7.52-3.93,7.52-9.358a3.406,3.406,0,0,0-6.81.024,0.709,0.709,0,0,1-.71.669h0a0.694,0.694,0,0,1-.7-0.669A3.427,3.427,0,0,0,1644.8,72.106Z"
+                                                        transform="translate(-1639.97 -70.719)" />
+                                                </svg>
+                                                <span class="sr-only">heart</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="week-products__item mix category-a">
+                                <article class="week-products__cart  products-cart">
+                                    <img class="week-products__img" src="images/filter-product/3.png"
+                                        alt="Wooden chair">
+                                    <ul class="week-products-list week-products__list">
+                                        <li class="week-products-list__icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="15.28" height="15.281"
+                                                viewBox="0 0 15.28 15.281">
+                                                <path fill="#a3bbc8" fill-rule="evenodd"
+                                                    d="M1547.7,72.076a0.617,0.617,0,0,1,.75.485,2.583,2.583,0,0,0,.78,1.489,3.036,3.036,0,0,0,1.49.777,0.636,0.636,0,0,1,.49.743,0.649,0.649,0,0,1-.72.515,4.21,4.21,0,0,1-2.14-1.13,4.164,4.164,0,0,1-1.13-2.136A0.6,0.6,0,0,1,1547.7,72.076ZM1550.98,66a6.267,6.267,0,0,1,6.28,6.257,6.136,6.136,0,0,1-.57,2.6l2.34,2.036c1.7,1.746.74,3.266,0.29,3.717-0.42.454-1.99,1.414-3.73-.292l-2.06-2.35A6.261,6.261,0,1,1,1550.98,66Zm5.55,13.517a1.352,1.352,0,0,0,1.88.226,1.313,1.313,0,0,0-.23-1.874l-2.16-1.88a6.236,6.236,0,0,1-1.37,1.34Zm-5.55-2.312a4.948,4.948,0,1,0-4.97-4.948A4.963,4.963,0,0,0,1550.98,77.2Z"
+                                                    transform="translate(-1544.72 -66)" />
+                                            </svg>
+                                            <span class="sr-only">product search</span>
+                                        </li>
+                                        <li class="week-products-list__icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18.94" height="16.969"
+                                                viewBox="0 0 18.94 16.969">
+                                                <path fill="#a3bbc8" fill-rule="evenodd"
+                                                    d="M1721.53,85.978a2.073,2.073,0,1,1,0-4.147h0a2.056,2.056,0,0,1,1.46.6,2.03,2.03,0,0,1,.61,1.466A2.071,2.071,0,0,1,1721.53,85.978Zm0-2.963h0a0.889,0.889,0,1,0,.34,1.71,0.9,0.9,0,0,0,.55-0.824,0.92,0.92,0,0,0-.26-0.629A0.9,0.9,0,0,0,1721.53,83.015Zm8.39,2.963a2.045,2.045,0,0,1-1.46-.607,2.068,2.068,0,0,1,1.46-3.54h0a1.953,1.953,0,0,1,1.47.6,2.085,2.085,0,0,1-.67,3.383A2.093,2.093,0,0,1,1729.92,85.978Zm0-2.963h0a0.978,0.978,0,0,0-.82.548,0.887,0.887,0,0,0,1.16,1.161,0.891,0.891,0,0,0,.29-1.452A0.9,0.9,0,0,0,1729.92,83.015Zm-11.27.164a0.562,0.562,0,0,1-.25-0.056,0.59,0.59,0,0,1-.29-0.787,3.686,3.686,0,0,1,3.05-2.151l-1.05-5.391a0.591,0.591,0,1,1,1.16-.228l1.09,5.578h9.43l1.8-6.771h-13.3a4.346,4.346,0,0,1-4.28-3.693,0.587,0.587,0,0,1,.49-0.673,0.6,0.6,0,0,1,.68.5,3.159,3.159,0,0,0,3.11,2.682h14.07a0.582,0.582,0,0,1,.47.232,0.594,0.594,0,0,1,.11.513l-2.13,7.956a0.59,0.59,0,0,1-.57.44h-10.36a0.03,0.03,0,0,0-.02,0,2.66,2.66,0,0,0-2.68,1.51A0.586,0.586,0,0,1,1718.65,83.178Z"
+                                                    transform="translate(-1716 -69)" />
+                                            </svg>
+                                            <span class="sr-only">cart</span>
+                                        </li>
+                                        <li class="week-products-list__icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="17.87" height="15.531"
+                                                viewBox="0 0 17.87 15.531">
+                                                <path fill="#a3bbc8" fill-rule="evenodd"
+                                                    d="M1648.91,86.245a0.731,0.731,0,0,1-.28-0.056c-0.35-.15-8.65-3.749-8.65-10.76a28.181,28.181,0,0,0,13.05-4.707,4.817,4.817,0,0,1,4.81,4.684c0,7.034-8.29,10.634-8.65,10.783A0.7,0.7,0,0,1,1648.91,86.245Zm-4.11-14.138a3.427,3.427,0,0,0-3.41,3.346c0,5.407,6.13,8.662,7.52,9.334,1.4-.672,7.52-3.93,7.52-9.358a3.406,3.406,0,0,0-6.81.024,0.709,0.709,0,0,1-.71.669h0a0.694,0.694,0,0,1-.7-0.669A3.427,3.427,0,0,0,1644.8,72.106Z"
+                                                    transform="translate(-1639.97 -70.719)" />
+                                            </svg>
+                                            <span class="sr-only">liked week-products</span>
+                                        </li>
+                                    </ul>
+                                    <div class="week-products__info">
+                                        <h5 class="week-products__subtitle">
+                                            Retro table
+                                        </h5>
+                                        <div class="week-products__price">
+                                            <span>$</span>29.00
+                                        </div>
+                                        <div class="week-products__star" data-rateyo-rating="4">
+                                        </div>
+                                        <div class="week-products__cost">
+                                            23<span>$</span>
+                                        </div>
+                                        <div class="week-products__text">
+                                            <p>
+                                                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                                                labore
+                                                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                                exercitation
+                                            </p>
+                                        </div>
+                                        <div class="week-products__links">
+                                            <a class="week-products__box week-products__box--active" href="#">
+                                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="18.94"
+                                                    height="16.969" viewBox="0 0 18.94 16.969">
+                                                    <path fill="#a7becb" fill-rule="evenodd"
+                                                        d="M1721.53,85.978a2.073,2.073,0,1,1,0-4.147h0a2.056,2.056,0,0,1,1.46.6,2.03,2.03,0,0,1,.61,1.466A2.071,2.071,0,0,1,1721.53,85.978Zm0-2.963h0a0.889,0.889,0,1,0,.34,1.71,0.9,0.9,0,0,0,.55-0.824,0.92,0.92,0,0,0-.26-0.629A0.9,0.9,0,0,0,1721.53,83.015Zm8.39,2.963a2.045,2.045,0,0,1-1.46-.607,2.068,2.068,0,0,1,1.46-3.54h0a1.953,1.953,0,0,1,1.47.6,2.085,2.085,0,0,1-.67,3.383A2.093,2.093,0,0,1,1729.92,85.978Zm0-2.963h0a0.978,0.978,0,0,0-.82.548,0.887,0.887,0,0,0,1.16,1.161,0.891,0.891,0,0,0,.29-1.452A0.9,0.9,0,0,0,1729.92,83.015Zm-11.27.164a0.562,0.562,0,0,1-.25-0.056,0.59,0.59,0,0,1-.29-0.787,3.686,3.686,0,0,1,3.05-2.151l-1.05-5.391a0.591,0.591,0,1,1,1.16-.228l1.09,5.578h9.43l1.8-6.771h-13.3a4.346,4.346,0,0,1-4.28-3.693,0.587,0.587,0,0,1,.49-0.673,0.6,0.6,0,0,1,.68.5,3.159,3.159,0,0,0,3.11,2.682h14.07a0.582,0.582,0,0,1,.47.232,0.594,0.594,0,0,1,.11.513l-2.13,7.956a0.59,0.59,0,0,1-.57.44h-10.36a0.03,0.03,0,0,0-.02,0,2.66,2.66,0,0,0-2.68,1.51A0.586,0.586,0,0,1,1718.65,83.178Z"
+                                                        transform="translate(-1716 -69)" />
+                                                </svg>
+                                                <span class="sr-only">basket</span>
+                                            </a>
+                                            <a class="week-products__box" href="#">
+                                                <svg class="week-products__icon" xmlns="http://www.w3.org/2000/svg"
+                                                    width="17.87" height="15.531" viewBox="0 0 17.87 15.531">
+                                                    <path fill="#a7becb" fill-rule="evenodd"
+                                                        d="M1648.91,86.245a0.731,0.731,0,0,1-.28-0.056c-0.35-.15-8.65-3.749-8.65-10.76a28.181,28.181,0,0,0,13.05-4.707,4.817,4.817,0,0,1,4.81,4.684c0,7.034-8.29,10.634-8.65,10.783A0.7,0.7,0,0,1,1648.91,86.245Zm-4.11-14.138a3.427,3.427,0,0,0-3.41,3.346c0,5.407,6.13,8.662,7.52,9.334,1.4-.672,7.52-3.93,7.52-9.358a3.406,3.406,0,0,0-6.81.024,0.709,0.709,0,0,1-.71.669h0a0.694,0.694,0,0,1-.7-0.669A3.427,3.427,0,0,0,1644.8,72.106Z"
+                                                        transform="translate(-1639.97 -70.719)" />
+                                                </svg>
+                                                <span class="sr-only">heart</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </article>
+                            </li>
+
+                            <li class="week-products__item mix category-a">
+                                <article class="week-products__cart  products-cart">
+                                    <img class="week-products__img" src="images/filter-product/4.png"
+                                        alt="Wooden chair">
+                                    <ul class="week-products-list week-products__list">
+                                        <li class="week-products-list__icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="15.28" height="15.281"
+                                                viewBox="0 0 15.28 15.281">
+                                                <path fill="#a3bbc8" fill-rule="evenodd"
+                                                    d="M1547.7,72.076a0.617,0.617,0,0,1,.75.485,2.583,2.583,0,0,0,.78,1.489,3.036,3.036,0,0,0,1.49.777,0.636,0.636,0,0,1,.49.743,0.649,0.649,0,0,1-.72.515,4.21,4.21,0,0,1-2.14-1.13,4.164,4.164,0,0,1-1.13-2.136A0.6,0.6,0,0,1,1547.7,72.076ZM1550.98,66a6.267,6.267,0,0,1,6.28,6.257,6.136,6.136,0,0,1-.57,2.6l2.34,2.036c1.7,1.746.74,3.266,0.29,3.717-0.42.454-1.99,1.414-3.73-.292l-2.06-2.35A6.261,6.261,0,1,1,1550.98,66Zm5.55,13.517a1.352,1.352,0,0,0,1.88.226,1.313,1.313,0,0,0-.23-1.874l-2.16-1.88a6.236,6.236,0,0,1-1.37,1.34Zm-5.55-2.312a4.948,4.948,0,1,0-4.97-4.948A4.963,4.963,0,0,0,1550.98,77.2Z"
+                                                    transform="translate(-1544.72 -66)" />
+                                            </svg>
+                                            <span class="sr-only">product search</span>
+                                        </li>
+                                        <li class="week-products-list__icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18.94" height="16.969"
+                                                viewBox="0 0 18.94 16.969">
+                                                <path fill="#a3bbc8" fill-rule="evenodd"
+                                                    d="M1721.53,85.978a2.073,2.073,0,1,1,0-4.147h0a2.056,2.056,0,0,1,1.46.6,2.03,2.03,0,0,1,.61,1.466A2.071,2.071,0,0,1,1721.53,85.978Zm0-2.963h0a0.889,0.889,0,1,0,.34,1.71,0.9,0.9,0,0,0,.55-0.824,0.92,0.92,0,0,0-.26-0.629A0.9,0.9,0,0,0,1721.53,83.015Zm8.39,2.963a2.045,2.045,0,0,1-1.46-.607,2.068,2.068,0,0,1,1.46-3.54h0a1.953,1.953,0,0,1,1.47.6,2.085,2.085,0,0,1-.67,3.383A2.093,2.093,0,0,1,1729.92,85.978Zm0-2.963h0a0.978,0.978,0,0,0-.82.548,0.887,0.887,0,0,0,1.16,1.161,0.891,0.891,0,0,0,.29-1.452A0.9,0.9,0,0,0,1729.92,83.015Zm-11.27.164a0.562,0.562,0,0,1-.25-0.056,0.59,0.59,0,0,1-.29-0.787,3.686,3.686,0,0,1,3.05-2.151l-1.05-5.391a0.591,0.591,0,1,1,1.16-.228l1.09,5.578h9.43l1.8-6.771h-13.3a4.346,4.346,0,0,1-4.28-3.693,0.587,0.587,0,0,1,.49-0.673,0.6,0.6,0,0,1,.68.5,3.159,3.159,0,0,0,3.11,2.682h14.07a0.582,0.582,0,0,1,.47.232,0.594,0.594,0,0,1,.11.513l-2.13,7.956a0.59,0.59,0,0,1-.57.44h-10.36a0.03,0.03,0,0,0-.02,0,2.66,2.66,0,0,0-2.68,1.51A0.586,0.586,0,0,1,1718.65,83.178Z"
+                                                    transform="translate(-1716 -69)" />
+                                            </svg>
+                                            <span class="sr-only">cart</span>
+                                        </li>
+                                        <li class="week-products-list__icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="17.87" height="15.531"
+                                                viewBox="0 0 17.87 15.531">
+                                                <path fill="#a3bbc8" fill-rule="evenodd"
+                                                    d="M1648.91,86.245a0.731,0.731,0,0,1-.28-0.056c-0.35-.15-8.65-3.749-8.65-10.76a28.181,28.181,0,0,0,13.05-4.707,4.817,4.817,0,0,1,4.81,4.684c0,7.034-8.29,10.634-8.65,10.783A0.7,0.7,0,0,1,1648.91,86.245Zm-4.11-14.138a3.427,3.427,0,0,0-3.41,3.346c0,5.407,6.13,8.662,7.52,9.334,1.4-.672,7.52-3.93,7.52-9.358a3.406,3.406,0,0,0-6.81.024,0.709,0.709,0,0,1-.71.669h0a0.694,0.694,0,0,1-.7-0.669A3.427,3.427,0,0,0,1644.8,72.106Z"
+                                                    transform="translate(-1639.97 -70.719)" />
+                                            </svg>
+                                            <span class="sr-only">liked week-products</span>
+                                        </li>
+                                    </ul>
+                                    <div class="week-products__info">
+                                        <h5 class="week-products__subtitle">
+                                            Wooden chair
+                                        </h5>
+                                        <div class="week-products__price">
+                                            <span>$</span>29.00
+                                        </div>
+                                        <div class="week-products__star" data-rateyo-rating="4">
+                                        </div>
+                                        <div class="week-products__cost">
+                                            23<span>$</span>
+                                        </div>
+                                        <div class="week-products__text">
+                                            <p>
+                                                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                                                labore
+                                                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                                exercitation
+                                            </p>
+                                        </div>
+                                        <div class="week-products__links">
+                                            <a class="week-products__box week-products__box--active" href="#">
+                                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="18.94"
+                                                    height="16.969" viewBox="0 0 18.94 16.969">
+                                                    <path fill="#a7becb" fill-rule="evenodd"
+                                                        d="M1721.53,85.978a2.073,2.073,0,1,1,0-4.147h0a2.056,2.056,0,0,1,1.46.6,2.03,2.03,0,0,1,.61,1.466A2.071,2.071,0,0,1,1721.53,85.978Zm0-2.963h0a0.889,0.889,0,1,0,.34,1.71,0.9,0.9,0,0,0,.55-0.824,0.92,0.92,0,0,0-.26-0.629A0.9,0.9,0,0,0,1721.53,83.015Zm8.39,2.963a2.045,2.045,0,0,1-1.46-.607,2.068,2.068,0,0,1,1.46-3.54h0a1.953,1.953,0,0,1,1.47.6,2.085,2.085,0,0,1-.67,3.383A2.093,2.093,0,0,1,1729.92,85.978Zm0-2.963h0a0.978,0.978,0,0,0-.82.548,0.887,0.887,0,0,0,1.16,1.161,0.891,0.891,0,0,0,.29-1.452A0.9,0.9,0,0,0,1729.92,83.015Zm-11.27.164a0.562,0.562,0,0,1-.25-0.056,0.59,0.59,0,0,1-.29-0.787,3.686,3.686,0,0,1,3.05-2.151l-1.05-5.391a0.591,0.591,0,1,1,1.16-.228l1.09,5.578h9.43l1.8-6.771h-13.3a4.346,4.346,0,0,1-4.28-3.693,0.587,0.587,0,0,1,.49-0.673,0.6,0.6,0,0,1,.68.5,3.159,3.159,0,0,0,3.11,2.682h14.07a0.582,0.582,0,0,1,.47.232,0.594,0.594,0,0,1,.11.513l-2.13,7.956a0.59,0.59,0,0,1-.57.44h-10.36a0.03,0.03,0,0,0-.02,0,2.66,2.66,0,0,0-2.68,1.51A0.586,0.586,0,0,1,1718.65,83.178Z"
+                                                        transform="translate(-1716 -69)" />
+                                                </svg>
+                                                <span class="sr-only">basket</span>
+                                            </a>
+                                            <a class="week-products__box" href="#">
+                                                <svg class="week-products__icon" xmlns="http://www.w3.org/2000/svg"
+                                                    width="17.87" height="15.531" viewBox="0 0 17.87 15.531">
+                                                    <path fill="#a7becb" fill-rule="evenodd"
+                                                        d="M1648.91,86.245a0.731,0.731,0,0,1-.28-0.056c-0.35-.15-8.65-3.749-8.65-10.76a28.181,28.181,0,0,0,13.05-4.707,4.817,4.817,0,0,1,4.81,4.684c0,7.034-8.29,10.634-8.65,10.783A0.7,0.7,0,0,1,1648.91,86.245Zm-4.11-14.138a3.427,3.427,0,0,0-3.41,3.346c0,5.407,6.13,8.662,7.52,9.334,1.4-.672,7.52-3.93,7.52-9.358a3.406,3.406,0,0,0-6.81.024,0.709,0.709,0,0,1-.71.669h0a0.694,0.694,0,0,1-.7-0.669A3.427,3.427,0,0,0,1644.8,72.106Z"
+                                                        transform="translate(-1639.97 -70.719)" />
+                                                </svg>
+                                                <span class="sr-only">heart</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="week-products__item mix category-a">
+                                <article class="week-products__cart  products-cart">
+                                    <img class="week-products__img" src="images/filter-product/5.png"
+                                        alt="Wooden chair">
+                                    <ul class="week-products-list week-products__list">
+                                        <li class="week-products-list__icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="15.28" height="15.281"
+                                                viewBox="0 0 15.28 15.281">
+                                                <path fill="#a3bbc8" fill-rule="evenodd"
+                                                    d="M1547.7,72.076a0.617,0.617,0,0,1,.75.485,2.583,2.583,0,0,0,.78,1.489,3.036,3.036,0,0,0,1.49.777,0.636,0.636,0,0,1,.49.743,0.649,0.649,0,0,1-.72.515,4.21,4.21,0,0,1-2.14-1.13,4.164,4.164,0,0,1-1.13-2.136A0.6,0.6,0,0,1,1547.7,72.076ZM1550.98,66a6.267,6.267,0,0,1,6.28,6.257,6.136,6.136,0,0,1-.57,2.6l2.34,2.036c1.7,1.746.74,3.266,0.29,3.717-0.42.454-1.99,1.414-3.73-.292l-2.06-2.35A6.261,6.261,0,1,1,1550.98,66Zm5.55,13.517a1.352,1.352,0,0,0,1.88.226,1.313,1.313,0,0,0-.23-1.874l-2.16-1.88a6.236,6.236,0,0,1-1.37,1.34Zm-5.55-2.312a4.948,4.948,0,1,0-4.97-4.948A4.963,4.963,0,0,0,1550.98,77.2Z"
+                                                    transform="translate(-1544.72 -66)" />
+                                            </svg>
+                                            <span class="sr-only">product search</span>
+                                        </li>
+                                        <li class="week-products-list__icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18.94" height="16.969"
+                                                viewBox="0 0 18.94 16.969">
+                                                <path fill="#a3bbc8" fill-rule="evenodd"
+                                                    d="M1721.53,85.978a2.073,2.073,0,1,1,0-4.147h0a2.056,2.056,0,0,1,1.46.6,2.03,2.03,0,0,1,.61,1.466A2.071,2.071,0,0,1,1721.53,85.978Zm0-2.963h0a0.889,0.889,0,1,0,.34,1.71,0.9,0.9,0,0,0,.55-0.824,0.92,0.92,0,0,0-.26-0.629A0.9,0.9,0,0,0,1721.53,83.015Zm8.39,2.963a2.045,2.045,0,0,1-1.46-.607,2.068,2.068,0,0,1,1.46-3.54h0a1.953,1.953,0,0,1,1.47.6,2.085,2.085,0,0,1-.67,3.383A2.093,2.093,0,0,1,1729.92,85.978Zm0-2.963h0a0.978,0.978,0,0,0-.82.548,0.887,0.887,0,0,0,1.16,1.161,0.891,0.891,0,0,0,.29-1.452A0.9,0.9,0,0,0,1729.92,83.015Zm-11.27.164a0.562,0.562,0,0,1-.25-0.056,0.59,0.59,0,0,1-.29-0.787,3.686,3.686,0,0,1,3.05-2.151l-1.05-5.391a0.591,0.591,0,1,1,1.16-.228l1.09,5.578h9.43l1.8-6.771h-13.3a4.346,4.346,0,0,1-4.28-3.693,0.587,0.587,0,0,1,.49-0.673,0.6,0.6,0,0,1,.68.5,3.159,3.159,0,0,0,3.11,2.682h14.07a0.582,0.582,0,0,1,.47.232,0.594,0.594,0,0,1,.11.513l-2.13,7.956a0.59,0.59,0,0,1-.57.44h-10.36a0.03,0.03,0,0,0-.02,0,2.66,2.66,0,0,0-2.68,1.51A0.586,0.586,0,0,1,1718.65,83.178Z"
+                                                    transform="translate(-1716 -69)" />
+                                            </svg>
+                                            <span class="sr-only">cart</span>
+                                        </li>
+                                        <li class="week-products-list__icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="17.87" height="15.531"
+                                                viewBox="0 0 17.87 15.531">
+                                                <path fill="#a3bbc8" fill-rule="evenodd"
+                                                    d="M1648.91,86.245a0.731,0.731,0,0,1-.28-0.056c-0.35-.15-8.65-3.749-8.65-10.76a28.181,28.181,0,0,0,13.05-4.707,4.817,4.817,0,0,1,4.81,4.684c0,7.034-8.29,10.634-8.65,10.783A0.7,0.7,0,0,1,1648.91,86.245Zm-4.11-14.138a3.427,3.427,0,0,0-3.41,3.346c0,5.407,6.13,8.662,7.52,9.334,1.4-.672,7.52-3.93,7.52-9.358a3.406,3.406,0,0,0-6.81.024,0.709,0.709,0,0,1-.71.669h0a0.694,0.694,0,0,1-.7-0.669A3.427,3.427,0,0,0,1644.8,72.106Z"
+                                                    transform="translate(-1639.97 -70.719)" />
+                                            </svg>
+                                            <span class="sr-only">liked week-products</span>
+                                        </li>
+                                    </ul>
+                                    <div class="week-products__info">
+                                        <h5 class="week-products__subtitle">
+                                            White chair
+                                        </h5>
+                                        <div class="week-products__price">
+                                            <span>$</span>29.00
+                                        </div>
+                                        <div class="week-products__star" data-rateyo-rating="4">
+                                        </div>
+                                        <div class="week-products__cost">
+                                            23<span>$</span>
+                                        </div>
+                                        <div class="week-products__text">
+                                            <p>
+                                                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                                                labore
+                                                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                                exercitation
+                                            </p>
+                                        </div>
+                                        <div class="week-products__links">
+                                            <a class="week-products__box week-products__box--active" href="#">
+                                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="18.94"
+                                                    height="16.969" viewBox="0 0 18.94 16.969">
+                                                    <path fill="#a7becb" fill-rule="evenodd"
+                                                        d="M1721.53,85.978a2.073,2.073,0,1,1,0-4.147h0a2.056,2.056,0,0,1,1.46.6,2.03,2.03,0,0,1,.61,1.466A2.071,2.071,0,0,1,1721.53,85.978Zm0-2.963h0a0.889,0.889,0,1,0,.34,1.71,0.9,0.9,0,0,0,.55-0.824,0.92,0.92,0,0,0-.26-0.629A0.9,0.9,0,0,0,1721.53,83.015Zm8.39,2.963a2.045,2.045,0,0,1-1.46-.607,2.068,2.068,0,0,1,1.46-3.54h0a1.953,1.953,0,0,1,1.47.6,2.085,2.085,0,0,1-.67,3.383A2.093,2.093,0,0,1,1729.92,85.978Zm0-2.963h0a0.978,0.978,0,0,0-.82.548,0.887,0.887,0,0,0,1.16,1.161,0.891,0.891,0,0,0,.29-1.452A0.9,0.9,0,0,0,1729.92,83.015Zm-11.27.164a0.562,0.562,0,0,1-.25-0.056,0.59,0.59,0,0,1-.29-0.787,3.686,3.686,0,0,1,3.05-2.151l-1.05-5.391a0.591,0.591,0,1,1,1.16-.228l1.09,5.578h9.43l1.8-6.771h-13.3a4.346,4.346,0,0,1-4.28-3.693,0.587,0.587,0,0,1,.49-0.673,0.6,0.6,0,0,1,.68.5,3.159,3.159,0,0,0,3.11,2.682h14.07a0.582,0.582,0,0,1,.47.232,0.594,0.594,0,0,1,.11.513l-2.13,7.956a0.59,0.59,0,0,1-.57.44h-10.36a0.03,0.03,0,0,0-.02,0,2.66,2.66,0,0,0-2.68,1.51A0.586,0.586,0,0,1,1718.65,83.178Z"
+                                                        transform="translate(-1716 -69)" />
+                                                </svg>
+                                                <span class="sr-only">basket</span>
+                                            </a>
+                                            <a class="week-products__box" href="#">
+                                                <svg class="week-products__icon" xmlns="http://www.w3.org/2000/svg"
+                                                    width="17.87" height="15.531" viewBox="0 0 17.87 15.531">
+                                                    <path fill="#a7becb" fill-rule="evenodd"
+                                                        d="M1648.91,86.245a0.731,0.731,0,0,1-.28-0.056c-0.35-.15-8.65-3.749-8.65-10.76a28.181,28.181,0,0,0,13.05-4.707,4.817,4.817,0,0,1,4.81,4.684c0,7.034-8.29,10.634-8.65,10.783A0.7,0.7,0,0,1,1648.91,86.245Zm-4.11-14.138a3.427,3.427,0,0,0-3.41,3.346c0,5.407,6.13,8.662,7.52,9.334,1.4-.672,7.52-3.93,7.52-9.358a3.406,3.406,0,0,0-6.81.024,0.709,0.709,0,0,1-.71.669h0a0.694,0.694,0,0,1-.7-0.669A3.427,3.427,0,0,0,1644.8,72.106Z"
+                                                        transform="translate(-1639.97 -70.719)" />
+                                                </svg>
+                                                <span class="sr-only">heart</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="week-products__item mix category-a">
+                                <article class="week-products__cart  products-cart">
+                                    <img class="week-products__img" src="images/filter-product/6.png"
+                                        alt="Wooden chair">
+                                    <ul class="week-products-list week-products__list">
+                                        <li class="week-products-list__icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="15.28" height="15.281"
+                                                viewBox="0 0 15.28 15.281">
+                                                <path fill="#a3bbc8" fill-rule="evenodd"
+                                                    d="M1547.7,72.076a0.617,0.617,0,0,1,.75.485,2.583,2.583,0,0,0,.78,1.489,3.036,3.036,0,0,0,1.49.777,0.636,0.636,0,0,1,.49.743,0.649,0.649,0,0,1-.72.515,4.21,4.21,0,0,1-2.14-1.13,4.164,4.164,0,0,1-1.13-2.136A0.6,0.6,0,0,1,1547.7,72.076ZM1550.98,66a6.267,6.267,0,0,1,6.28,6.257,6.136,6.136,0,0,1-.57,2.6l2.34,2.036c1.7,1.746.74,3.266,0.29,3.717-0.42.454-1.99,1.414-3.73-.292l-2.06-2.35A6.261,6.261,0,1,1,1550.98,66Zm5.55,13.517a1.352,1.352,0,0,0,1.88.226,1.313,1.313,0,0,0-.23-1.874l-2.16-1.88a6.236,6.236,0,0,1-1.37,1.34Zm-5.55-2.312a4.948,4.948,0,1,0-4.97-4.948A4.963,4.963,0,0,0,1550.98,77.2Z"
+                                                    transform="translate(-1544.72 -66)" />
+                                            </svg>
+                                            <span class="sr-only">product search</span>
+                                        </li>
+                                        <li class="week-products-list__icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18.94" height="16.969"
+                                                viewBox="0 0 18.94 16.969">
+                                                <path fill="#a3bbc8" fill-rule="evenodd"
+                                                    d="M1721.53,85.978a2.073,2.073,0,1,1,0-4.147h0a2.056,2.056,0,0,1,1.46.6,2.03,2.03,0,0,1,.61,1.466A2.071,2.071,0,0,1,1721.53,85.978Zm0-2.963h0a0.889,0.889,0,1,0,.34,1.71,0.9,0.9,0,0,0,.55-0.824,0.92,0.92,0,0,0-.26-0.629A0.9,0.9,0,0,0,1721.53,83.015Zm8.39,2.963a2.045,2.045,0,0,1-1.46-.607,2.068,2.068,0,0,1,1.46-3.54h0a1.953,1.953,0,0,1,1.47.6,2.085,2.085,0,0,1-.67,3.383A2.093,2.093,0,0,1,1729.92,85.978Zm0-2.963h0a0.978,0.978,0,0,0-.82.548,0.887,0.887,0,0,0,1.16,1.161,0.891,0.891,0,0,0,.29-1.452A0.9,0.9,0,0,0,1729.92,83.015Zm-11.27.164a0.562,0.562,0,0,1-.25-0.056,0.59,0.59,0,0,1-.29-0.787,3.686,3.686,0,0,1,3.05-2.151l-1.05-5.391a0.591,0.591,0,1,1,1.16-.228l1.09,5.578h9.43l1.8-6.771h-13.3a4.346,4.346,0,0,1-4.28-3.693,0.587,0.587,0,0,1,.49-0.673,0.6,0.6,0,0,1,.68.5,3.159,3.159,0,0,0,3.11,2.682h14.07a0.582,0.582,0,0,1,.47.232,0.594,0.594,0,0,1,.11.513l-2.13,7.956a0.59,0.59,0,0,1-.57.44h-10.36a0.03,0.03,0,0,0-.02,0,2.66,2.66,0,0,0-2.68,1.51A0.586,0.586,0,0,1,1718.65,83.178Z"
+                                                    transform="translate(-1716 -69)" />
+                                            </svg>
+                                            <span class="sr-only">cart</span>
+                                        </li>
+                                        <li class="week-products-list__icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="17.87" height="15.531"
+                                                viewBox="0 0 17.87 15.531">
+                                                <path fill="#a3bbc8" fill-rule="evenodd"
+                                                    d="M1648.91,86.245a0.731,0.731,0,0,1-.28-0.056c-0.35-.15-8.65-3.749-8.65-10.76a28.181,28.181,0,0,0,13.05-4.707,4.817,4.817,0,0,1,4.81,4.684c0,7.034-8.29,10.634-8.65,10.783A0.7,0.7,0,0,1,1648.91,86.245Zm-4.11-14.138a3.427,3.427,0,0,0-3.41,3.346c0,5.407,6.13,8.662,7.52,9.334,1.4-.672,7.52-3.93,7.52-9.358a3.406,3.406,0,0,0-6.81.024,0.709,0.709,0,0,1-.71.669h0a0.694,0.694,0,0,1-.7-0.669A3.427,3.427,0,0,0,1644.8,72.106Z"
+                                                    transform="translate(-1639.97 -70.719)" />
+                                            </svg>
+                                            <span class="sr-only">liked week-products</span>
+                                        </li>
+                                    </ul>
+                                    <div class="week-products__info">
+                                        <h5 class="week-products__subtitle">
+                                            Retro table
+                                        </h5>
+                                        <div class="week-products__price">
+                                            <span>$</span>29.00
+                                        </div>
+                                        <div class="week-products__star" data-rateyo-rating="4">
+                                        </div>
+                                        <div class="week-products__cost">
+                                            23<span>$</span>
+                                        </div>
+                                        <div class="week-products__text">
+                                            <p>
+                                                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                                                labore
+                                                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                                exercitation
+                                            </p>
+                                        </div>
+                                        <div class="week-products__links">
+                                            <a class="week-products__box week-products__box--active" href="#">
+                                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="18.94"
+                                                    height="16.969" viewBox="0 0 18.94 16.969">
+                                                    <path fill="#a7becb" fill-rule="evenodd"
+                                                        d="M1721.53,85.978a2.073,2.073,0,1,1,0-4.147h0a2.056,2.056,0,0,1,1.46.6,2.03,2.03,0,0,1,.61,1.466A2.071,2.071,0,0,1,1721.53,85.978Zm0-2.963h0a0.889,0.889,0,1,0,.34,1.71,0.9,0.9,0,0,0,.55-0.824,0.92,0.92,0,0,0-.26-0.629A0.9,0.9,0,0,0,1721.53,83.015Zm8.39,2.963a2.045,2.045,0,0,1-1.46-.607,2.068,2.068,0,0,1,1.46-3.54h0a1.953,1.953,0,0,1,1.47.6,2.085,2.085,0,0,1-.67,3.383A2.093,2.093,0,0,1,1729.92,85.978Zm0-2.963h0a0.978,0.978,0,0,0-.82.548,0.887,0.887,0,0,0,1.16,1.161,0.891,0.891,0,0,0,.29-1.452A0.9,0.9,0,0,0,1729.92,83.015Zm-11.27.164a0.562,0.562,0,0,1-.25-0.056,0.59,0.59,0,0,1-.29-0.787,3.686,3.686,0,0,1,3.05-2.151l-1.05-5.391a0.591,0.591,0,1,1,1.16-.228l1.09,5.578h9.43l1.8-6.771h-13.3a4.346,4.346,0,0,1-4.28-3.693,0.587,0.587,0,0,1,.49-0.673,0.6,0.6,0,0,1,.68.5,3.159,3.159,0,0,0,3.11,2.682h14.07a0.582,0.582,0,0,1,.47.232,0.594,0.594,0,0,1,.11.513l-2.13,7.956a0.59,0.59,0,0,1-.57.44h-10.36a0.03,0.03,0,0,0-.02,0,2.66,2.66,0,0,0-2.68,1.51A0.586,0.586,0,0,1,1718.65,83.178Z"
+                                                        transform="translate(-1716 -69)" />
+                                                </svg>
+                                                <span class="sr-only">basket</span>
+                                            </a>
+                                            <a class="week-products__box" href="#">
+                                                <svg class="week-products__icon" xmlns="http://www.w3.org/2000/svg"
+                                                    width="17.87" height="15.531" viewBox="0 0 17.87 15.531">
+                                                    <path fill="#a7becb" fill-rule="evenodd"
+                                                        d="M1648.91,86.245a0.731,0.731,0,0,1-.28-0.056c-0.35-.15-8.65-3.749-8.65-10.76a28.181,28.181,0,0,0,13.05-4.707,4.817,4.817,0,0,1,4.81,4.684c0,7.034-8.29,10.634-8.65,10.783A0.7,0.7,0,0,1,1648.91,86.245Zm-4.11-14.138a3.427,3.427,0,0,0-3.41,3.346c0,5.407,6.13,8.662,7.52,9.334,1.4-.672,7.52-3.93,7.52-9.358a3.406,3.406,0,0,0-6.81.024,0.709,0.709,0,0,1-.71.669h0a0.694,0.694,0,0,1-.7-0.669A3.427,3.427,0,0,0,1644.8,72.106Z"
+                                                        transform="translate(-1639.97 -70.719)" />
+                                                </svg>
+                                                <span class="sr-only">heart</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="week-products__item mix category-a">
+                                <article class="week-products__cart  products-cart">
+                                    <img class="week-products__img" src="images/filter-product/7.png"
+                                        alt="Wooden chair">
+                                    <ul class="week-products-list week-products__list">
+                                        <li class="week-products-list__icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="15.28" height="15.281"
+                                                viewBox="0 0 15.28 15.281">
+                                                <path fill="#a3bbc8" fill-rule="evenodd"
+                                                    d="M1547.7,72.076a0.617,0.617,0,0,1,.75.485,2.583,2.583,0,0,0,.78,1.489,3.036,3.036,0,0,0,1.49.777,0.636,0.636,0,0,1,.49.743,0.649,0.649,0,0,1-.72.515,4.21,4.21,0,0,1-2.14-1.13,4.164,4.164,0,0,1-1.13-2.136A0.6,0.6,0,0,1,1547.7,72.076ZM1550.98,66a6.267,6.267,0,0,1,6.28,6.257,6.136,6.136,0,0,1-.57,2.6l2.34,2.036c1.7,1.746.74,3.266,0.29,3.717-0.42.454-1.99,1.414-3.73-.292l-2.06-2.35A6.261,6.261,0,1,1,1550.98,66Zm5.55,13.517a1.352,1.352,0,0,0,1.88.226,1.313,1.313,0,0,0-.23-1.874l-2.16-1.88a6.236,6.236,0,0,1-1.37,1.34Zm-5.55-2.312a4.948,4.948,0,1,0-4.97-4.948A4.963,4.963,0,0,0,1550.98,77.2Z"
+                                                    transform="translate(-1544.72 -66)" />
+                                            </svg>
+                                            <span class="sr-only">product search</span>
+                                        </li>
+                                        <li class="week-products-list__icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18.94" height="16.969"
+                                                viewBox="0 0 18.94 16.969">
+                                                <path fill="#a3bbc8" fill-rule="evenodd"
+                                                    d="M1721.53,85.978a2.073,2.073,0,1,1,0-4.147h0a2.056,2.056,0,0,1,1.46.6,2.03,2.03,0,0,1,.61,1.466A2.071,2.071,0,0,1,1721.53,85.978Zm0-2.963h0a0.889,0.889,0,1,0,.34,1.71,0.9,0.9,0,0,0,.55-0.824,0.92,0.92,0,0,0-.26-0.629A0.9,0.9,0,0,0,1721.53,83.015Zm8.39,2.963a2.045,2.045,0,0,1-1.46-.607,2.068,2.068,0,0,1,1.46-3.54h0a1.953,1.953,0,0,1,1.47.6,2.085,2.085,0,0,1-.67,3.383A2.093,2.093,0,0,1,1729.92,85.978Zm0-2.963h0a0.978,0.978,0,0,0-.82.548,0.887,0.887,0,0,0,1.16,1.161,0.891,0.891,0,0,0,.29-1.452A0.9,0.9,0,0,0,1729.92,83.015Zm-11.27.164a0.562,0.562,0,0,1-.25-0.056,0.59,0.59,0,0,1-.29-0.787,3.686,3.686,0,0,1,3.05-2.151l-1.05-5.391a0.591,0.591,0,1,1,1.16-.228l1.09,5.578h9.43l1.8-6.771h-13.3a4.346,4.346,0,0,1-4.28-3.693,0.587,0.587,0,0,1,.49-0.673,0.6,0.6,0,0,1,.68.5,3.159,3.159,0,0,0,3.11,2.682h14.07a0.582,0.582,0,0,1,.47.232,0.594,0.594,0,0,1,.11.513l-2.13,7.956a0.59,0.59,0,0,1-.57.44h-10.36a0.03,0.03,0,0,0-.02,0,2.66,2.66,0,0,0-2.68,1.51A0.586,0.586,0,0,1,1718.65,83.178Z"
+                                                    transform="translate(-1716 -69)" />
+                                            </svg>
+                                            <span class="sr-only">cart</span>
+                                        </li>
+                                        <li class="week-products-list__icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="17.87" height="15.531"
+                                                viewBox="0 0 17.87 15.531">
+                                                <path fill="#a3bbc8" fill-rule="evenodd"
+                                                    d="M1648.91,86.245a0.731,0.731,0,0,1-.28-0.056c-0.35-.15-8.65-3.749-8.65-10.76a28.181,28.181,0,0,0,13.05-4.707,4.817,4.817,0,0,1,4.81,4.684c0,7.034-8.29,10.634-8.65,10.783A0.7,0.7,0,0,1,1648.91,86.245Zm-4.11-14.138a3.427,3.427,0,0,0-3.41,3.346c0,5.407,6.13,8.662,7.52,9.334,1.4-.672,7.52-3.93,7.52-9.358a3.406,3.406,0,0,0-6.81.024,0.709,0.709,0,0,1-.71.669h0a0.694,0.694,0,0,1-.7-0.669A3.427,3.427,0,0,0,1644.8,72.106Z"
+                                                    transform="translate(-1639.97 -70.719)" />
+                                            </svg>
+                                            <span class="sr-only">liked week-products</span>
+                                        </li>
+                                    </ul>
+                                    <div class="week-products__info">
+                                        <h5 class="week-products__subtitle">
+                                            Wooden chair
+                                        </h5>
+                                        <div class="week-products__price">
+                                            <span>$</span>29.00
+                                        </div>
+                                        <div class="week-products__star" data-rateyo-rating="4">
+                                        </div>
+                                        <div class="week-products__cost">
+                                            23<span>$</span>
+                                        </div>
+                                        <div class="week-products__text">
+                                            <p>
+                                                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                                                labore
+                                                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                                exercitation
+                                            </p>
+                                        </div>
+                                        <div class="week-products__links">
+                                            <a class="week-products__box week-products__box--active" href="#">
+                                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="18.94"
+                                                    height="16.969" viewBox="0 0 18.94 16.969">
+                                                    <path fill="#a7becb" fill-rule="evenodd"
+                                                        d="M1721.53,85.978a2.073,2.073,0,1,1,0-4.147h0a2.056,2.056,0,0,1,1.46.6,2.03,2.03,0,0,1,.61,1.466A2.071,2.071,0,0,1,1721.53,85.978Zm0-2.963h0a0.889,0.889,0,1,0,.34,1.71,0.9,0.9,0,0,0,.55-0.824,0.92,0.92,0,0,0-.26-0.629A0.9,0.9,0,0,0,1721.53,83.015Zm8.39,2.963a2.045,2.045,0,0,1-1.46-.607,2.068,2.068,0,0,1,1.46-3.54h0a1.953,1.953,0,0,1,1.47.6,2.085,2.085,0,0,1-.67,3.383A2.093,2.093,0,0,1,1729.92,85.978Zm0-2.963h0a0.978,0.978,0,0,0-.82.548,0.887,0.887,0,0,0,1.16,1.161,0.891,0.891,0,0,0,.29-1.452A0.9,0.9,0,0,0,1729.92,83.015Zm-11.27.164a0.562,0.562,0,0,1-.25-0.056,0.59,0.59,0,0,1-.29-0.787,3.686,3.686,0,0,1,3.05-2.151l-1.05-5.391a0.591,0.591,0,1,1,1.16-.228l1.09,5.578h9.43l1.8-6.771h-13.3a4.346,4.346,0,0,1-4.28-3.693,0.587,0.587,0,0,1,.49-0.673,0.6,0.6,0,0,1,.68.5,3.159,3.159,0,0,0,3.11,2.682h14.07a0.582,0.582,0,0,1,.47.232,0.594,0.594,0,0,1,.11.513l-2.13,7.956a0.59,0.59,0,0,1-.57.44h-10.36a0.03,0.03,0,0,0-.02,0,2.66,2.66,0,0,0-2.68,1.51A0.586,0.586,0,0,1,1718.65,83.178Z"
+                                                        transform="translate(-1716 -69)" />
+                                                </svg>
+                                                <span class="sr-only">basket</span>
+                                            </a>
+                                            <a class="week-products__box" href="#">
+                                                <svg class="week-products__icon" xmlns="http://www.w3.org/2000/svg"
+                                                    width="17.87" height="15.531" viewBox="0 0 17.87 15.531">
+                                                    <path fill="#a7becb" fill-rule="evenodd"
+                                                        d="M1648.91,86.245a0.731,0.731,0,0,1-.28-0.056c-0.35-.15-8.65-3.749-8.65-10.76a28.181,28.181,0,0,0,13.05-4.707,4.817,4.817,0,0,1,4.81,4.684c0,7.034-8.29,10.634-8.65,10.783A0.7,0.7,0,0,1,1648.91,86.245Zm-4.11-14.138a3.427,3.427,0,0,0-3.41,3.346c0,5.407,6.13,8.662,7.52,9.334,1.4-.672,7.52-3.93,7.52-9.358a3.406,3.406,0,0,0-6.81.024,0.709,0.709,0,0,1-.71.669h0a0.694,0.694,0,0,1-.7-0.669A3.427,3.427,0,0,0,1644.8,72.106Z"
+                                                        transform="translate(-1639.97 -70.719)" />
+                                                </svg>
+                                                <span class="sr-only">heart</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="week-products__item mix category-a">
+                                <article class="week-products__cart  products-cart">
+                                    <img class="week-products__img" src="images/filter-product/8.png"
+                                        alt="Wooden chair">
+                                    <ul class="week-products-list week-products__list">
+                                        <li class="week-products-list__icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="15.28" height="15.281"
+                                                viewBox="0 0 15.28 15.281">
+                                                <path fill="#a3bbc8" fill-rule="evenodd"
+                                                    d="M1547.7,72.076a0.617,0.617,0,0,1,.75.485,2.583,2.583,0,0,0,.78,1.489,3.036,3.036,0,0,0,1.49.777,0.636,0.636,0,0,1,.49.743,0.649,0.649,0,0,1-.72.515,4.21,4.21,0,0,1-2.14-1.13,4.164,4.164,0,0,1-1.13-2.136A0.6,0.6,0,0,1,1547.7,72.076ZM1550.98,66a6.267,6.267,0,0,1,6.28,6.257,6.136,6.136,0,0,1-.57,2.6l2.34,2.036c1.7,1.746.74,3.266,0.29,3.717-0.42.454-1.99,1.414-3.73-.292l-2.06-2.35A6.261,6.261,0,1,1,1550.98,66Zm5.55,13.517a1.352,1.352,0,0,0,1.88.226,1.313,1.313,0,0,0-.23-1.874l-2.16-1.88a6.236,6.236,0,0,1-1.37,1.34Zm-5.55-2.312a4.948,4.948,0,1,0-4.97-4.948A4.963,4.963,0,0,0,1550.98,77.2Z"
+                                                    transform="translate(-1544.72 -66)" />
+                                            </svg>
+                                            <span class="sr-only">product search</span>
+                                        </li>
+                                        <li class="week-products-list__icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18.94" height="16.969"
+                                                viewBox="0 0 18.94 16.969">
+                                                <path fill="#a3bbc8" fill-rule="evenodd"
+                                                    d="M1721.53,85.978a2.073,2.073,0,1,1,0-4.147h0a2.056,2.056,0,0,1,1.46.6,2.03,2.03,0,0,1,.61,1.466A2.071,2.071,0,0,1,1721.53,85.978Zm0-2.963h0a0.889,0.889,0,1,0,.34,1.71,0.9,0.9,0,0,0,.55-0.824,0.92,0.92,0,0,0-.26-0.629A0.9,0.9,0,0,0,1721.53,83.015Zm8.39,2.963a2.045,2.045,0,0,1-1.46-.607,2.068,2.068,0,0,1,1.46-3.54h0a1.953,1.953,0,0,1,1.47.6,2.085,2.085,0,0,1-.67,3.383A2.093,2.093,0,0,1,1729.92,85.978Zm0-2.963h0a0.978,0.978,0,0,0-.82.548,0.887,0.887,0,0,0,1.16,1.161,0.891,0.891,0,0,0,.29-1.452A0.9,0.9,0,0,0,1729.92,83.015Zm-11.27.164a0.562,0.562,0,0,1-.25-0.056,0.59,0.59,0,0,1-.29-0.787,3.686,3.686,0,0,1,3.05-2.151l-1.05-5.391a0.591,0.591,0,1,1,1.16-.228l1.09,5.578h9.43l1.8-6.771h-13.3a4.346,4.346,0,0,1-4.28-3.693,0.587,0.587,0,0,1,.49-0.673,0.6,0.6,0,0,1,.68.5,3.159,3.159,0,0,0,3.11,2.682h14.07a0.582,0.582,0,0,1,.47.232,0.594,0.594,0,0,1,.11.513l-2.13,7.956a0.59,0.59,0,0,1-.57.44h-10.36a0.03,0.03,0,0,0-.02,0,2.66,2.66,0,0,0-2.68,1.51A0.586,0.586,0,0,1,1718.65,83.178Z"
+                                                    transform="translate(-1716 -69)" />
+                                            </svg>
+                                            <span class="sr-only">cart</span>
+                                        </li>
+                                        <li class="week-products-list__icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="17.87" height="15.531"
+                                                viewBox="0 0 17.87 15.531">
+                                                <path fill="#a3bbc8" fill-rule="evenodd"
+                                                    d="M1648.91,86.245a0.731,0.731,0,0,1-.28-0.056c-0.35-.15-8.65-3.749-8.65-10.76a28.181,28.181,0,0,0,13.05-4.707,4.817,4.817,0,0,1,4.81,4.684c0,7.034-8.29,10.634-8.65,10.783A0.7,0.7,0,0,1,1648.91,86.245Zm-4.11-14.138a3.427,3.427,0,0,0-3.41,3.346c0,5.407,6.13,8.662,7.52,9.334,1.4-.672,7.52-3.93,7.52-9.358a3.406,3.406,0,0,0-6.81.024,0.709,0.709,0,0,1-.71.669h0a0.694,0.694,0,0,1-.7-0.669A3.427,3.427,0,0,0,1644.8,72.106Z"
+                                                    transform="translate(-1639.97 -70.719)" />
+                                            </svg>
+                                            <span class="sr-only">liked week-products</span>
+                                        </li>
+                                    </ul>
+                                    <div class="week-products__info">
+                                        <h5 class="week-products__subtitle">
+                                            White chair
+                                        </h5>
+                                        <div class="week-products__price">
+                                            <span>$</span>29.00
+                                        </div>
+                                        <div class="week-products__star" data-rateyo-rating="4">
+                                        </div>
+                                        <div class="week-products__cost">
+                                            23<span>$</span>
+                                        </div>
+                                        <div class="week-products__text">
+                                            <p>
+                                                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                                                labore
+                                                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                                exercitation
+                                            </p>
+                                        </div>
+                                        <div class="week-products__links">
+                                            <a class="week-products__box week-products__box--active" href="#">
+                                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="18.94"
+                                                    height="16.969" viewBox="0 0 18.94 16.969">
+                                                    <path fill="#a7becb" fill-rule="evenodd"
+                                                        d="M1721.53,85.978a2.073,2.073,0,1,1,0-4.147h0a2.056,2.056,0,0,1,1.46.6,2.03,2.03,0,0,1,.61,1.466A2.071,2.071,0,0,1,1721.53,85.978Zm0-2.963h0a0.889,0.889,0,1,0,.34,1.71,0.9,0.9,0,0,0,.55-0.824,0.92,0.92,0,0,0-.26-0.629A0.9,0.9,0,0,0,1721.53,83.015Zm8.39,2.963a2.045,2.045,0,0,1-1.46-.607,2.068,2.068,0,0,1,1.46-3.54h0a1.953,1.953,0,0,1,1.47.6,2.085,2.085,0,0,1-.67,3.383A2.093,2.093,0,0,1,1729.92,85.978Zm0-2.963h0a0.978,0.978,0,0,0-.82.548,0.887,0.887,0,0,0,1.16,1.161,0.891,0.891,0,0,0,.29-1.452A0.9,0.9,0,0,0,1729.92,83.015Zm-11.27.164a0.562,0.562,0,0,1-.25-0.056,0.59,0.59,0,0,1-.29-0.787,3.686,3.686,0,0,1,3.05-2.151l-1.05-5.391a0.591,0.591,0,1,1,1.16-.228l1.09,5.578h9.43l1.8-6.771h-13.3a4.346,4.346,0,0,1-4.28-3.693,0.587,0.587,0,0,1,.49-0.673,0.6,0.6,0,0,1,.68.5,3.159,3.159,0,0,0,3.11,2.682h14.07a0.582,0.582,0,0,1,.47.232,0.594,0.594,0,0,1,.11.513l-2.13,7.956a0.59,0.59,0,0,1-.57.44h-10.36a0.03,0.03,0,0,0-.02,0,2.66,2.66,0,0,0-2.68,1.51A0.586,0.586,0,0,1,1718.65,83.178Z"
+                                                        transform="translate(-1716 -69)" />
+                                                </svg>
+                                                <span class="sr-only">basket</span>
+                                            </a>
+                                            <a class="week-products__box" href="#">
+                                                <svg class="week-products__icon" xmlns="http://www.w3.org/2000/svg"
+                                                    width="17.87" height="15.531" viewBox="0 0 17.87 15.531">
+                                                    <path fill="#a7becb" fill-rule="evenodd"
+                                                        d="M1648.91,86.245a0.731,0.731,0,0,1-.28-0.056c-0.35-.15-8.65-3.749-8.65-10.76a28.181,28.181,0,0,0,13.05-4.707,4.817,4.817,0,0,1,4.81,4.684c0,7.034-8.29,10.634-8.65,10.783A0.7,0.7,0,0,1,1648.91,86.245Zm-4.11-14.138a3.427,3.427,0,0,0-3.41,3.346c0,5.407,6.13,8.662,7.52,9.334,1.4-.672,7.52-3.93,7.52-9.358a3.406,3.406,0,0,0-6.81.024,0.709,0.709,0,0,1-.71.669h0a0.694,0.694,0,0,1-.7-0.669A3.427,3.427,0,0,0,1644.8,72.106Z"
+                                                        transform="translate(-1639.97 -70.719)" />
+                                                </svg>
+                                                <span class="sr-only">heart</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="week-products__item mix category-a">
+                                <article class="week-products__cart  products-cart">
+                                    <img class="week-products__img" src="images/filter-product/8.png"
+                                        alt="Wooden chair">
+                                    <ul class="week-products-list week-products__list">
+                                        <li class="week-products-list__icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="15.28" height="15.281"
+                                                viewBox="0 0 15.28 15.281">
+                                                <path fill="#a3bbc8" fill-rule="evenodd"
+                                                    d="M1547.7,72.076a0.617,0.617,0,0,1,.75.485,2.583,2.583,0,0,0,.78,1.489,3.036,3.036,0,0,0,1.49.777,0.636,0.636,0,0,1,.49.743,0.649,0.649,0,0,1-.72.515,4.21,4.21,0,0,1-2.14-1.13,4.164,4.164,0,0,1-1.13-2.136A0.6,0.6,0,0,1,1547.7,72.076ZM1550.98,66a6.267,6.267,0,0,1,6.28,6.257,6.136,6.136,0,0,1-.57,2.6l2.34,2.036c1.7,1.746.74,3.266,0.29,3.717-0.42.454-1.99,1.414-3.73-.292l-2.06-2.35A6.261,6.261,0,1,1,1550.98,66Zm5.55,13.517a1.352,1.352,0,0,0,1.88.226,1.313,1.313,0,0,0-.23-1.874l-2.16-1.88a6.236,6.236,0,0,1-1.37,1.34Zm-5.55-2.312a4.948,4.948,0,1,0-4.97-4.948A4.963,4.963,0,0,0,1550.98,77.2Z"
+                                                    transform="translate(-1544.72 -66)" />
+                                            </svg>
+                                            <span class="sr-only">product search</span>
+                                        </li>
+                                        <li class="week-products-list__icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18.94" height="16.969"
+                                                viewBox="0 0 18.94 16.969">
+                                                <path fill="#a3bbc8" fill-rule="evenodd"
+                                                    d="M1721.53,85.978a2.073,2.073,0,1,1,0-4.147h0a2.056,2.056,0,0,1,1.46.6,2.03,2.03,0,0,1,.61,1.466A2.071,2.071,0,0,1,1721.53,85.978Zm0-2.963h0a0.889,0.889,0,1,0,.34,1.71,0.9,0.9,0,0,0,.55-0.824,0.92,0.92,0,0,0-.26-0.629A0.9,0.9,0,0,0,1721.53,83.015Zm8.39,2.963a2.045,2.045,0,0,1-1.46-.607,2.068,2.068,0,0,1,1.46-3.54h0a1.953,1.953,0,0,1,1.47.6,2.085,2.085,0,0,1-.67,3.383A2.093,2.093,0,0,1,1729.92,85.978Zm0-2.963h0a0.978,0.978,0,0,0-.82.548,0.887,0.887,0,0,0,1.16,1.161,0.891,0.891,0,0,0,.29-1.452A0.9,0.9,0,0,0,1729.92,83.015Zm-11.27.164a0.562,0.562,0,0,1-.25-0.056,0.59,0.59,0,0,1-.29-0.787,3.686,3.686,0,0,1,3.05-2.151l-1.05-5.391a0.591,0.591,0,1,1,1.16-.228l1.09,5.578h9.43l1.8-6.771h-13.3a4.346,4.346,0,0,1-4.28-3.693,0.587,0.587,0,0,1,.49-0.673,0.6,0.6,0,0,1,.68.5,3.159,3.159,0,0,0,3.11,2.682h14.07a0.582,0.582,0,0,1,.47.232,0.594,0.594,0,0,1,.11.513l-2.13,7.956a0.59,0.59,0,0,1-.57.44h-10.36a0.03,0.03,0,0,0-.02,0,2.66,2.66,0,0,0-2.68,1.51A0.586,0.586,0,0,1,1718.65,83.178Z"
+                                                    transform="translate(-1716 -69)" />
+                                            </svg>
+                                            <span class="sr-only">cart</span>
+                                        </li>
+                                        <li class="week-products-list__icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="17.87" height="15.531"
+                                                viewBox="0 0 17.87 15.531">
+                                                <path fill="#a3bbc8" fill-rule="evenodd"
+                                                    d="M1648.91,86.245a0.731,0.731,0,0,1-.28-0.056c-0.35-.15-8.65-3.749-8.65-10.76a28.181,28.181,0,0,0,13.05-4.707,4.817,4.817,0,0,1,4.81,4.684c0,7.034-8.29,10.634-8.65,10.783A0.7,0.7,0,0,1,1648.91,86.245Zm-4.11-14.138a3.427,3.427,0,0,0-3.41,3.346c0,5.407,6.13,8.662,7.52,9.334,1.4-.672,7.52-3.93,7.52-9.358a3.406,3.406,0,0,0-6.81.024,0.709,0.709,0,0,1-.71.669h0a0.694,0.694,0,0,1-.7-0.669A3.427,3.427,0,0,0,1644.8,72.106Z"
+                                                    transform="translate(-1639.97 -70.719)" />
+                                            </svg>
+                                            <span class="sr-only">liked week-products</span>
+                                        </li>
+                                    </ul>
+                                    <div class="week-products__info">
+                                        <h5 class="week-products__subtitle">
+                                            Retro table
+                                        </h5>
+                                        <div class="week-products__price">
+                                            <span>$</span>29.00
+                                        </div>
+                                        <div class="week-products__star" data-rateyo-rating="4">
+                                        </div>
+                                        <div class="week-products__cost">
+                                            23<span>$</span>
+                                        </div>
+                                        <div class="week-products__text">
+                                            <p>
+                                                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                                                labore
+                                                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                                exercitation
+                                            </p>
+                                        </div>
+                                        <div class="week-products__links">
+                                            <a class="week-products__box week-products__box--active" href="#">
+                                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="18.94"
+                                                    height="16.969" viewBox="0 0 18.94 16.969">
+                                                    <path fill="#a7becb" fill-rule="evenodd"
+                                                        d="M1721.53,85.978a2.073,2.073,0,1,1,0-4.147h0a2.056,2.056,0,0,1,1.46.6,2.03,2.03,0,0,1,.61,1.466A2.071,2.071,0,0,1,1721.53,85.978Zm0-2.963h0a0.889,0.889,0,1,0,.34,1.71,0.9,0.9,0,0,0,.55-0.824,0.92,0.92,0,0,0-.26-0.629A0.9,0.9,0,0,0,1721.53,83.015Zm8.39,2.963a2.045,2.045,0,0,1-1.46-.607,2.068,2.068,0,0,1,1.46-3.54h0a1.953,1.953,0,0,1,1.47.6,2.085,2.085,0,0,1-.67,3.383A2.093,2.093,0,0,1,1729.92,85.978Zm0-2.963h0a0.978,0.978,0,0,0-.82.548,0.887,0.887,0,0,0,1.16,1.161,0.891,0.891,0,0,0,.29-1.452A0.9,0.9,0,0,0,1729.92,83.015Zm-11.27.164a0.562,0.562,0,0,1-.25-0.056,0.59,0.59,0,0,1-.29-0.787,3.686,3.686,0,0,1,3.05-2.151l-1.05-5.391a0.591,0.591,0,1,1,1.16-.228l1.09,5.578h9.43l1.8-6.771h-13.3a4.346,4.346,0,0,1-4.28-3.693,0.587,0.587,0,0,1,.49-0.673,0.6,0.6,0,0,1,.68.5,3.159,3.159,0,0,0,3.11,2.682h14.07a0.582,0.582,0,0,1,.47.232,0.594,0.594,0,0,1,.11.513l-2.13,7.956a0.59,0.59,0,0,1-.57.44h-10.36a0.03,0.03,0,0,0-.02,0,2.66,2.66,0,0,0-2.68,1.51A0.586,0.586,0,0,1,1718.65,83.178Z"
+                                                        transform="translate(-1716 -69)" />
+                                                </svg>
+                                                <span class="sr-only">basket</span>
+                                            </a>
+                                            <a class="week-products__box" href="#">
+                                                <svg class="week-products__icon" xmlns="http://www.w3.org/2000/svg"
+                                                    width="17.87" height="15.531" viewBox="0 0 17.87 15.531">
+                                                    <path fill="#a7becb" fill-rule="evenodd"
+                                                        d="M1648.91,86.245a0.731,0.731,0,0,1-.28-0.056c-0.35-.15-8.65-3.749-8.65-10.76a28.181,28.181,0,0,0,13.05-4.707,4.817,4.817,0,0,1,4.81,4.684c0,7.034-8.29,10.634-8.65,10.783A0.7,0.7,0,0,1,1648.91,86.245Zm-4.11-14.138a3.427,3.427,0,0,0-3.41,3.346c0,5.407,6.13,8.662,7.52,9.334,1.4-.672,7.52-3.93,7.52-9.358a3.406,3.406,0,0,0-6.81.024,0.709,0.709,0,0,1-.71.669h0a0.694,0.694,0,0,1-.7-0.669A3.427,3.427,0,0,0,1644.8,72.106Z"
+                                                        transform="translate(-1639.97 -70.719)" />
+                                                </svg>
+                                                <span class="sr-only">heart</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="week-products__item mix category-a">
+                                <article class="week-products__cart  products-cart">
+                                    <img class="week-products__img" src="images/filter-product/10.png"
+                                        alt="Wooden chair">
+                                    <ul class="week-products-list week-products__list">
+                                        <li class="week-products-list__icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="15.28" height="15.281"
+                                                viewBox="0 0 15.28 15.281">
+                                                <path fill="#a3bbc8" fill-rule="evenodd"
+                                                    d="M1547.7,72.076a0.617,0.617,0,0,1,.75.485,2.583,2.583,0,0,0,.78,1.489,3.036,3.036,0,0,0,1.49.777,0.636,0.636,0,0,1,.49.743,0.649,0.649,0,0,1-.72.515,4.21,4.21,0,0,1-2.14-1.13,4.164,4.164,0,0,1-1.13-2.136A0.6,0.6,0,0,1,1547.7,72.076ZM1550.98,66a6.267,6.267,0,0,1,6.28,6.257,6.136,6.136,0,0,1-.57,2.6l2.34,2.036c1.7,1.746.74,3.266,0.29,3.717-0.42.454-1.99,1.414-3.73-.292l-2.06-2.35A6.261,6.261,0,1,1,1550.98,66Zm5.55,13.517a1.352,1.352,0,0,0,1.88.226,1.313,1.313,0,0,0-.23-1.874l-2.16-1.88a6.236,6.236,0,0,1-1.37,1.34Zm-5.55-2.312a4.948,4.948,0,1,0-4.97-4.948A4.963,4.963,0,0,0,1550.98,77.2Z"
+                                                    transform="translate(-1544.72 -66)" />
+                                            </svg>
+                                            <span class="sr-only">product search</span>
+                                        </li>
+                                        <li class="week-products-list__icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18.94" height="16.969"
+                                                viewBox="0 0 18.94 16.969">
+                                                <path fill="#a3bbc8" fill-rule="evenodd"
+                                                    d="M1721.53,85.978a2.073,2.073,0,1,1,0-4.147h0a2.056,2.056,0,0,1,1.46.6,2.03,2.03,0,0,1,.61,1.466A2.071,2.071,0,0,1,1721.53,85.978Zm0-2.963h0a0.889,0.889,0,1,0,.34,1.71,0.9,0.9,0,0,0,.55-0.824,0.92,0.92,0,0,0-.26-0.629A0.9,0.9,0,0,0,1721.53,83.015Zm8.39,2.963a2.045,2.045,0,0,1-1.46-.607,2.068,2.068,0,0,1,1.46-3.54h0a1.953,1.953,0,0,1,1.47.6,2.085,2.085,0,0,1-.67,3.383A2.093,2.093,0,0,1,1729.92,85.978Zm0-2.963h0a0.978,0.978,0,0,0-.82.548,0.887,0.887,0,0,0,1.16,1.161,0.891,0.891,0,0,0,.29-1.452A0.9,0.9,0,0,0,1729.92,83.015Zm-11.27.164a0.562,0.562,0,0,1-.25-0.056,0.59,0.59,0,0,1-.29-0.787,3.686,3.686,0,0,1,3.05-2.151l-1.05-5.391a0.591,0.591,0,1,1,1.16-.228l1.09,5.578h9.43l1.8-6.771h-13.3a4.346,4.346,0,0,1-4.28-3.693,0.587,0.587,0,0,1,.49-0.673,0.6,0.6,0,0,1,.68.5,3.159,3.159,0,0,0,3.11,2.682h14.07a0.582,0.582,0,0,1,.47.232,0.594,0.594,0,0,1,.11.513l-2.13,7.956a0.59,0.59,0,0,1-.57.44h-10.36a0.03,0.03,0,0,0-.02,0,2.66,2.66,0,0,0-2.68,1.51A0.586,0.586,0,0,1,1718.65,83.178Z"
+                                                    transform="translate(-1716 -69)" />
+                                            </svg>
+                                            <span class="sr-only">cart</span>
+                                        </li>
+                                        <li class="week-products-list__icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="17.87" height="15.531"
+                                                viewBox="0 0 17.87 15.531">
+                                                <path fill="#a3bbc8" fill-rule="evenodd"
+                                                    d="M1648.91,86.245a0.731,0.731,0,0,1-.28-0.056c-0.35-.15-8.65-3.749-8.65-10.76a28.181,28.181,0,0,0,13.05-4.707,4.817,4.817,0,0,1,4.81,4.684c0,7.034-8.29,10.634-8.65,10.783A0.7,0.7,0,0,1,1648.91,86.245Zm-4.11-14.138a3.427,3.427,0,0,0-3.41,3.346c0,5.407,6.13,8.662,7.52,9.334,1.4-.672,7.52-3.93,7.52-9.358a3.406,3.406,0,0,0-6.81.024,0.709,0.709,0,0,1-.71.669h0a0.694,0.694,0,0,1-.7-0.669A3.427,3.427,0,0,0,1644.8,72.106Z"
+                                                    transform="translate(-1639.97 -70.719)" />
+                                            </svg>
+                                            <span class="sr-only">liked week-products</span>
+                                        </li>
+                                    </ul>
+                                    <div class="week-products__info">
+                                        <h5 class="week-products__subtitle">
+                                            Wooden chair
+                                        </h5>
+                                        <div class="week-products__price">
+                                            <span>$</span>29.00
+                                        </div>
+                                        <div class="week-products__star" data-rateyo-rating="4">
+                                        </div>
+                                        <div class="week-products__cost">
+                                            23<span>$</span>
+                                        </div>
+                                        <div class="week-products__text">
+                                            <p>
+                                                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                                                labore
+                                                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                                exercitation
+                                            </p>
+                                        </div>
+                                        <div class="week-products__links">
+                                            <a class="week-products__box week-products__box--active" href="#">
+                                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="18.94"
+                                                    height="16.969" viewBox="0 0 18.94 16.969">
+                                                    <path fill="#a7becb" fill-rule="evenodd"
+                                                        d="M1721.53,85.978a2.073,2.073,0,1,1,0-4.147h0a2.056,2.056,0,0,1,1.46.6,2.03,2.03,0,0,1,.61,1.466A2.071,2.071,0,0,1,1721.53,85.978Zm0-2.963h0a0.889,0.889,0,1,0,.34,1.71,0.9,0.9,0,0,0,.55-0.824,0.92,0.92,0,0,0-.26-0.629A0.9,0.9,0,0,0,1721.53,83.015Zm8.39,2.963a2.045,2.045,0,0,1-1.46-.607,2.068,2.068,0,0,1,1.46-3.54h0a1.953,1.953,0,0,1,1.47.6,2.085,2.085,0,0,1-.67,3.383A2.093,2.093,0,0,1,1729.92,85.978Zm0-2.963h0a0.978,0.978,0,0,0-.82.548,0.887,0.887,0,0,0,1.16,1.161,0.891,0.891,0,0,0,.29-1.452A0.9,0.9,0,0,0,1729.92,83.015Zm-11.27.164a0.562,0.562,0,0,1-.25-0.056,0.59,0.59,0,0,1-.29-0.787,3.686,3.686,0,0,1,3.05-2.151l-1.05-5.391a0.591,0.591,0,1,1,1.16-.228l1.09,5.578h9.43l1.8-6.771h-13.3a4.346,4.346,0,0,1-4.28-3.693,0.587,0.587,0,0,1,.49-0.673,0.6,0.6,0,0,1,.68.5,3.159,3.159,0,0,0,3.11,2.682h14.07a0.582,0.582,0,0,1,.47.232,0.594,0.594,0,0,1,.11.513l-2.13,7.956a0.59,0.59,0,0,1-.57.44h-10.36a0.03,0.03,0,0,0-.02,0,2.66,2.66,0,0,0-2.68,1.51A0.586,0.586,0,0,1,1718.65,83.178Z"
+                                                        transform="translate(-1716 -69)" />
+                                                </svg>
+                                                <span class="sr-only">basket</span>
+                                            </a>
+                                            <a class="week-products__box" href="#">
+                                                <svg class="week-products__icon" xmlns="http://www.w3.org/2000/svg"
+                                                    width="17.87" height="15.531" viewBox="0 0 17.87 15.531">
+                                                    <path fill="#a7becb" fill-rule="evenodd"
+                                                        d="M1648.91,86.245a0.731,0.731,0,0,1-.28-0.056c-0.35-.15-8.65-3.749-8.65-10.76a28.181,28.181,0,0,0,13.05-4.707,4.817,4.817,0,0,1,4.81,4.684c0,7.034-8.29,10.634-8.65,10.783A0.7,0.7,0,0,1,1648.91,86.245Zm-4.11-14.138a3.427,3.427,0,0,0-3.41,3.346c0,5.407,6.13,8.662,7.52,9.334,1.4-.672,7.52-3.93,7.52-9.358a3.406,3.406,0,0,0-6.81.024,0.709,0.709,0,0,1-.71.669h0a0.694,0.694,0,0,1-.7-0.669A3.427,3.427,0,0,0,1644.8,72.106Z"
+                                                        transform="translate(-1639.97 -70.719)" />
+                                                </svg>
+                                                <span class="sr-only">heart</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="week-products__item mix category-a">
+                                <article class="week-products__cart  products-cart">
+                                    <img class="week-products__img" src="images/filter-product/11.png"
+                                        alt="Wooden chair">
+                                    <ul class="week-products-list week-products__list">
+                                        <li class="week-products-list__icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="15.28" height="15.281"
+                                                viewBox="0 0 15.28 15.281">
+                                                <path fill="#a3bbc8" fill-rule="evenodd"
+                                                    d="M1547.7,72.076a0.617,0.617,0,0,1,.75.485,2.583,2.583,0,0,0,.78,1.489,3.036,3.036,0,0,0,1.49.777,0.636,0.636,0,0,1,.49.743,0.649,0.649,0,0,1-.72.515,4.21,4.21,0,0,1-2.14-1.13,4.164,4.164,0,0,1-1.13-2.136A0.6,0.6,0,0,1,1547.7,72.076ZM1550.98,66a6.267,6.267,0,0,1,6.28,6.257,6.136,6.136,0,0,1-.57,2.6l2.34,2.036c1.7,1.746.74,3.266,0.29,3.717-0.42.454-1.99,1.414-3.73-.292l-2.06-2.35A6.261,6.261,0,1,1,1550.98,66Zm5.55,13.517a1.352,1.352,0,0,0,1.88.226,1.313,1.313,0,0,0-.23-1.874l-2.16-1.88a6.236,6.236,0,0,1-1.37,1.34Zm-5.55-2.312a4.948,4.948,0,1,0-4.97-4.948A4.963,4.963,0,0,0,1550.98,77.2Z"
+                                                    transform="translate(-1544.72 -66)" />
+                                            </svg>
+                                            <span class="sr-only">product search</span>
+                                        </li>
+                                        <li class="week-products-list__icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18.94" height="16.969"
+                                                viewBox="0 0 18.94 16.969">
+                                                <path fill="#a3bbc8" fill-rule="evenodd"
+                                                    d="M1721.53,85.978a2.073,2.073,0,1,1,0-4.147h0a2.056,2.056,0,0,1,1.46.6,2.03,2.03,0,0,1,.61,1.466A2.071,2.071,0,0,1,1721.53,85.978Zm0-2.963h0a0.889,0.889,0,1,0,.34,1.71,0.9,0.9,0,0,0,.55-0.824,0.92,0.92,0,0,0-.26-0.629A0.9,0.9,0,0,0,1721.53,83.015Zm8.39,2.963a2.045,2.045,0,0,1-1.46-.607,2.068,2.068,0,0,1,1.46-3.54h0a1.953,1.953,0,0,1,1.47.6,2.085,2.085,0,0,1-.67,3.383A2.093,2.093,0,0,1,1729.92,85.978Zm0-2.963h0a0.978,0.978,0,0,0-.82.548,0.887,0.887,0,0,0,1.16,1.161,0.891,0.891,0,0,0,.29-1.452A0.9,0.9,0,0,0,1729.92,83.015Zm-11.27.164a0.562,0.562,0,0,1-.25-0.056,0.59,0.59,0,0,1-.29-0.787,3.686,3.686,0,0,1,3.05-2.151l-1.05-5.391a0.591,0.591,0,1,1,1.16-.228l1.09,5.578h9.43l1.8-6.771h-13.3a4.346,4.346,0,0,1-4.28-3.693,0.587,0.587,0,0,1,.49-0.673,0.6,0.6,0,0,1,.68.5,3.159,3.159,0,0,0,3.11,2.682h14.07a0.582,0.582,0,0,1,.47.232,0.594,0.594,0,0,1,.11.513l-2.13,7.956a0.59,0.59,0,0,1-.57.44h-10.36a0.03,0.03,0,0,0-.02,0,2.66,2.66,0,0,0-2.68,1.51A0.586,0.586,0,0,1,1718.65,83.178Z"
+                                                    transform="translate(-1716 -69)" />
+                                            </svg>
+                                            <span class="sr-only">cart</span>
+                                        </li>
+                                        <li class="week-products-list__icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="17.87" height="15.531"
+                                                viewBox="0 0 17.87 15.531">
+                                                <path fill="#a3bbc8" fill-rule="evenodd"
+                                                    d="M1648.91,86.245a0.731,0.731,0,0,1-.28-0.056c-0.35-.15-8.65-3.749-8.65-10.76a28.181,28.181,0,0,0,13.05-4.707,4.817,4.817,0,0,1,4.81,4.684c0,7.034-8.29,10.634-8.65,10.783A0.7,0.7,0,0,1,1648.91,86.245Zm-4.11-14.138a3.427,3.427,0,0,0-3.41,3.346c0,5.407,6.13,8.662,7.52,9.334,1.4-.672,7.52-3.93,7.52-9.358a3.406,3.406,0,0,0-6.81.024,0.709,0.709,0,0,1-.71.669h0a0.694,0.694,0,0,1-.7-0.669A3.427,3.427,0,0,0,1644.8,72.106Z"
+                                                    transform="translate(-1639.97 -70.719)" />
+                                            </svg>
+                                            <span class="sr-only">liked week-products</span>
+                                        </li>
+                                    </ul>
+                                    <div class="week-products__info">
+                                        <h5 class="week-products__subtitle">
+                                            White chair
+                                        </h5>
+                                        <div class="week-products__price">
+                                            <span>$</span>29.00
+                                        </div>
+                                        <div class="week-products__star" data-rateyo-rating="4">
+                                        </div>
+                                        <div class="week-products__cost">
+                                            23<span>$</span>
+                                        </div>
+                                        <div class="week-products__text">
+                                            <p>
+                                                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                                                labore
+                                                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                                exercitation
+                                            </p>
+                                        </div>
+                                        <div class="week-products__links">
+                                            <a class="week-products__box week-products__box--active" href="#">
+                                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="18.94"
+                                                    height="16.969" viewBox="0 0 18.94 16.969">
+                                                    <path fill="#a7becb" fill-rule="evenodd"
+                                                        d="M1721.53,85.978a2.073,2.073,0,1,1,0-4.147h0a2.056,2.056,0,0,1,1.46.6,2.03,2.03,0,0,1,.61,1.466A2.071,2.071,0,0,1,1721.53,85.978Zm0-2.963h0a0.889,0.889,0,1,0,.34,1.71,0.9,0.9,0,0,0,.55-0.824,0.92,0.92,0,0,0-.26-0.629A0.9,0.9,0,0,0,1721.53,83.015Zm8.39,2.963a2.045,2.045,0,0,1-1.46-.607,2.068,2.068,0,0,1,1.46-3.54h0a1.953,1.953,0,0,1,1.47.6,2.085,2.085,0,0,1-.67,3.383A2.093,2.093,0,0,1,1729.92,85.978Zm0-2.963h0a0.978,0.978,0,0,0-.82.548,0.887,0.887,0,0,0,1.16,1.161,0.891,0.891,0,0,0,.29-1.452A0.9,0.9,0,0,0,1729.92,83.015Zm-11.27.164a0.562,0.562,0,0,1-.25-0.056,0.59,0.59,0,0,1-.29-0.787,3.686,3.686,0,0,1,3.05-2.151l-1.05-5.391a0.591,0.591,0,1,1,1.16-.228l1.09,5.578h9.43l1.8-6.771h-13.3a4.346,4.346,0,0,1-4.28-3.693,0.587,0.587,0,0,1,.49-0.673,0.6,0.6,0,0,1,.68.5,3.159,3.159,0,0,0,3.11,2.682h14.07a0.582,0.582,0,0,1,.47.232,0.594,0.594,0,0,1,.11.513l-2.13,7.956a0.59,0.59,0,0,1-.57.44h-10.36a0.03,0.03,0,0,0-.02,0,2.66,2.66,0,0,0-2.68,1.51A0.586,0.586,0,0,1,1718.65,83.178Z"
+                                                        transform="translate(-1716 -69)" />
+                                                </svg>
+                                                <span class="sr-only">basket</span>
+                                            </a>
+                                            <a class="week-products__box" href="#">
+                                                <svg class="week-products__icon" xmlns="http://www.w3.org/2000/svg"
+                                                    width="17.87" height="15.531" viewBox="0 0 17.87 15.531">
+                                                    <path fill="#a7becb" fill-rule="evenodd"
+                                                        d="M1648.91,86.245a0.731,0.731,0,0,1-.28-0.056c-0.35-.15-8.65-3.749-8.65-10.76a28.181,28.181,0,0,0,13.05-4.707,4.817,4.817,0,0,1,4.81,4.684c0,7.034-8.29,10.634-8.65,10.783A0.7,0.7,0,0,1,1648.91,86.245Zm-4.11-14.138a3.427,3.427,0,0,0-3.41,3.346c0,5.407,6.13,8.662,7.52,9.334,1.4-.672,7.52-3.93,7.52-9.358a3.406,3.406,0,0,0-6.81.024,0.709,0.709,0,0,1-.71.669h0a0.694,0.694,0,0,1-.7-0.669A3.427,3.427,0,0,0,1644.8,72.106Z"
+                                                        transform="translate(-1639.97 -70.719)" />
+                                                </svg>
+                                                <span class="sr-only">heart</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="week-products__item mix category-a">
+                                <article class="week-products__cart  products-cart">
+                                    <img class="week-products__img" src="images/filter-product/12.png"
+                                        alt="Wooden chair">
+                                    <ul class="week-products-list week-products__list">
+                                        <li class="week-products-list__icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="15.28" height="15.281"
+                                                viewBox="0 0 15.28 15.281">
+                                                <path fill="#a3bbc8" fill-rule="evenodd"
+                                                    d="M1547.7,72.076a0.617,0.617,0,0,1,.75.485,2.583,2.583,0,0,0,.78,1.489,3.036,3.036,0,0,0,1.49.777,0.636,0.636,0,0,1,.49.743,0.649,0.649,0,0,1-.72.515,4.21,4.21,0,0,1-2.14-1.13,4.164,4.164,0,0,1-1.13-2.136A0.6,0.6,0,0,1,1547.7,72.076ZM1550.98,66a6.267,6.267,0,0,1,6.28,6.257,6.136,6.136,0,0,1-.57,2.6l2.34,2.036c1.7,1.746.74,3.266,0.29,3.717-0.42.454-1.99,1.414-3.73-.292l-2.06-2.35A6.261,6.261,0,1,1,1550.98,66Zm5.55,13.517a1.352,1.352,0,0,0,1.88.226,1.313,1.313,0,0,0-.23-1.874l-2.16-1.88a6.236,6.236,0,0,1-1.37,1.34Zm-5.55-2.312a4.948,4.948,0,1,0-4.97-4.948A4.963,4.963,0,0,0,1550.98,77.2Z"
+                                                    transform="translate(-1544.72 -66)" />
+                                            </svg>
+                                            <span class="sr-only">product search</span>
+                                        </li>
+                                        <li class="week-products-list__icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18.94" height="16.969"
+                                                viewBox="0 0 18.94 16.969">
+                                                <path fill="#a3bbc8" fill-rule="evenodd"
+                                                    d="M1721.53,85.978a2.073,2.073,0,1,1,0-4.147h0a2.056,2.056,0,0,1,1.46.6,2.03,2.03,0,0,1,.61,1.466A2.071,2.071,0,0,1,1721.53,85.978Zm0-2.963h0a0.889,0.889,0,1,0,.34,1.71,0.9,0.9,0,0,0,.55-0.824,0.92,0.92,0,0,0-.26-0.629A0.9,0.9,0,0,0,1721.53,83.015Zm8.39,2.963a2.045,2.045,0,0,1-1.46-.607,2.068,2.068,0,0,1,1.46-3.54h0a1.953,1.953,0,0,1,1.47.6,2.085,2.085,0,0,1-.67,3.383A2.093,2.093,0,0,1,1729.92,85.978Zm0-2.963h0a0.978,0.978,0,0,0-.82.548,0.887,0.887,0,0,0,1.16,1.161,0.891,0.891,0,0,0,.29-1.452A0.9,0.9,0,0,0,1729.92,83.015Zm-11.27.164a0.562,0.562,0,0,1-.25-0.056,0.59,0.59,0,0,1-.29-0.787,3.686,3.686,0,0,1,3.05-2.151l-1.05-5.391a0.591,0.591,0,1,1,1.16-.228l1.09,5.578h9.43l1.8-6.771h-13.3a4.346,4.346,0,0,1-4.28-3.693,0.587,0.587,0,0,1,.49-0.673,0.6,0.6,0,0,1,.68.5,3.159,3.159,0,0,0,3.11,2.682h14.07a0.582,0.582,0,0,1,.47.232,0.594,0.594,0,0,1,.11.513l-2.13,7.956a0.59,0.59,0,0,1-.57.44h-10.36a0.03,0.03,0,0,0-.02,0,2.66,2.66,0,0,0-2.68,1.51A0.586,0.586,0,0,1,1718.65,83.178Z"
+                                                    transform="translate(-1716 -69)" />
+                                            </svg>
+                                            <span class="sr-only">cart</span>
+                                        </li>
+                                        <li class="week-products-list__icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="17.87" height="15.531"
+                                                viewBox="0 0 17.87 15.531">
+                                                <path fill="#a3bbc8" fill-rule="evenodd"
+                                                    d="M1648.91,86.245a0.731,0.731,0,0,1-.28-0.056c-0.35-.15-8.65-3.749-8.65-10.76a28.181,28.181,0,0,0,13.05-4.707,4.817,4.817,0,0,1,4.81,4.684c0,7.034-8.29,10.634-8.65,10.783A0.7,0.7,0,0,1,1648.91,86.245Zm-4.11-14.138a3.427,3.427,0,0,0-3.41,3.346c0,5.407,6.13,8.662,7.52,9.334,1.4-.672,7.52-3.93,7.52-9.358a3.406,3.406,0,0,0-6.81.024,0.709,0.709,0,0,1-.71.669h0a0.694,0.694,0,0,1-.7-0.669A3.427,3.427,0,0,0,1644.8,72.106Z"
+                                                    transform="translate(-1639.97 -70.719)" />
+                                            </svg>
+                                            <span class="sr-only">liked week-products</span>
+                                        </li>
+                                    </ul>
+                                    <div class="week-products__info">
+                                        <h5 class="week-products__subtitle">
+                                            Retro table
+                                        </h5>
+                                        <div class="week-products__price">
+                                            <span>$</span>29.00
+                                        </div>
+                                        <div class="week-products__star" data-rateyo-rating="4">
+                                        </div>
+                                        <div class="week-products__cost">
+                                            23<span>$</span>
+                                        </div>
+                                        <div class="week-products__text">
+                                            <p>
+                                                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                                                labore
+                                                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                                exercitation
+                                            </p>
+                                        </div>
+                                        <div class="week-products__links">
+                                            <a class="week-products__box week-products__box--active" href="#">
+                                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="18.94"
+                                                    height="16.969" viewBox="0 0 18.94 16.969">
+                                                    <path fill="#a7becb" fill-rule="evenodd"
+                                                        d="M1721.53,85.978a2.073,2.073,0,1,1,0-4.147h0a2.056,2.056,0,0,1,1.46.6,2.03,2.03,0,0,1,.61,1.466A2.071,2.071,0,0,1,1721.53,85.978Zm0-2.963h0a0.889,0.889,0,1,0,.34,1.71,0.9,0.9,0,0,0,.55-0.824,0.92,0.92,0,0,0-.26-0.629A0.9,0.9,0,0,0,1721.53,83.015Zm8.39,2.963a2.045,2.045,0,0,1-1.46-.607,2.068,2.068,0,0,1,1.46-3.54h0a1.953,1.953,0,0,1,1.47.6,2.085,2.085,0,0,1-.67,3.383A2.093,2.093,0,0,1,1729.92,85.978Zm0-2.963h0a0.978,0.978,0,0,0-.82.548,0.887,0.887,0,0,0,1.16,1.161,0.891,0.891,0,0,0,.29-1.452A0.9,0.9,0,0,0,1729.92,83.015Zm-11.27.164a0.562,0.562,0,0,1-.25-0.056,0.59,0.59,0,0,1-.29-0.787,3.686,3.686,0,0,1,3.05-2.151l-1.05-5.391a0.591,0.591,0,1,1,1.16-.228l1.09,5.578h9.43l1.8-6.771h-13.3a4.346,4.346,0,0,1-4.28-3.693,0.587,0.587,0,0,1,.49-0.673,0.6,0.6,0,0,1,.68.5,3.159,3.159,0,0,0,3.11,2.682h14.07a0.582,0.582,0,0,1,.47.232,0.594,0.594,0,0,1,.11.513l-2.13,7.956a0.59,0.59,0,0,1-.57.44h-10.36a0.03,0.03,0,0,0-.02,0,2.66,2.66,0,0,0-2.68,1.51A0.586,0.586,0,0,1,1718.65,83.178Z"
+                                                        transform="translate(-1716 -69)" />
+                                                </svg>
+                                                <span class="sr-only">basket</span>
+                                            </a>
+                                            <a class="week-products__box" href="#">
+                                                <svg class="week-products__icon" xmlns="http://www.w3.org/2000/svg"
+                                                    width="17.87" height="15.531" viewBox="0 0 17.87 15.531">
+                                                    <path fill="#a7becb" fill-rule="evenodd"
+                                                        d="M1648.91,86.245a0.731,0.731,0,0,1-.28-0.056c-0.35-.15-8.65-3.749-8.65-10.76a28.181,28.181,0,0,0,13.05-4.707,4.817,4.817,0,0,1,4.81,4.684c0,7.034-8.29,10.634-8.65,10.783A0.7,0.7,0,0,1,1648.91,86.245Zm-4.11-14.138a3.427,3.427,0,0,0-3.41,3.346c0,5.407,6.13,8.662,7.52,9.334,1.4-.672,7.52-3.93,7.52-9.358a3.406,3.406,0,0,0-6.81.024,0.709,0.709,0,0,1-.71.669h0a0.694,0.694,0,0,1-.7-0.669A3.427,3.427,0,0,0,1644.8,72.106Z"
+                                                        transform="translate(-1639.97 -70.719)" />
+                                                </svg>
+                                                <span class="sr-only">heart</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </article>
+                            </li>
+                        </ul>
+                        <div class="pagination">
+                            <ul class="pagination__items pagination-list">
+                                <li class="pagination__item pagination__item--active">
+                                    <a class="pagination__link pagination__link--active" href="#">1</a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a class="pagination__link" href="#">2</a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a class="pagination__link" href="#">3</a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a class="pagination__link" href="#">Next</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="partners partners--wraper">
+                <div class="container container--sm">
+                    <ul class="partners__list">
+                        <li class="partners__item">
+                            <img class="partners__img" src="images/partners/partners1.png" alt="peterson stephanie">
+                        </li>
+                        <li class="partners__item">
+                            <img class="partners__img" src="images/partners/partners2.png" alt="kmn">
+                        </li>
+                        <li class="partners__item">
+                            <img class="partners__img" src="images/partners/partners3.png" alt="chainforce">
+                        </li>
+                        <li class="partners__item">
+                            <img class="partners__img" src="images/partners/partners4.png" alt="nextg3n">
+                        </li>
+                        <li class="partners__item">
+                            <img class="partners__img" src="images/partners/partners5.png" alt="vintage">
+                        </li>
+                        <li class="partners__item">
+                            <img class="partners__img" src="images/partners/partners1.png" alt="peterson stephanie">
+                        </li>
+                        <li class="partners__item">
+                            <img class="partners__img" src="images/partners/partners2.png" alt="kmn">
+                        </li>
+                        <li class="partners__item">
+                            <img class="partners__img" src="images/partners/partners3.png" alt="chainforce">
+                        </li>
+                        <li class="partners__item">
+                            <img class="partners__img" src="images/partners/partners4.png" alt="nextg3n">
+                        </li>
+                        <li class="partners__item">
+                            <img class="partners__img" src="images/partners/partners5.png" alt="vintage">
+                        </li>
+                        <li class="partners__item">
+                            <img class="partners__img" src="images/partners/partners1.png" alt="peterson stephanie">
+                        </li>
+                        <li class="partners__item">
+                            <img class="partners__img" src="images/partners/partners2.png" alt="kmn">
+                        </li>
+                        <li class="partners__item">
+                            <img class="partners__img" src="images/partners/partners3.png" alt="chainforce">
+                        </li>
+                        <li class="partners__item">
+                            <img class="partners__img" src="images/partners/partners4.png" alt="nextg3n">
+                        </li>
+                        <li class="partners__item">
+                            <img class="partners__img" src="images/partners/partners5.png" alt="vintage">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container container--sm">
+            <div class="footer__top">
+                <div class="footer__item footer__item--order ">
+                    <a class="logo  footer__logo" href="#">
+                        <img src="images/logo.png" alt="logo">
+                    </a>
+                    <address class="footer__info">
+                        <a class="footer__link" href="#">
+                            <span>Address:</span>
+                            4772 Wines Lane
+                            <p>Houston, TX 77032</p>
+                        </a>
+                        <a class="footer__link" href="tel:+8323475843">
+                            <span>Telephone:</span>
+                            +832-347-5843
+                        </a>
+                        <a class="footer__link" href="mailto:contact@glee.com">
+                            <span>Email:</span>
+                            contact@Glee.com
+                        </a>
+                    </address>
+                </div>
+                <div class="footer__item">
+                    <span class="footer__title">
+                        Services
+                    </span>
+                    <ul class="footer__text">
+                        <li>
+                            <a class="footer__link" href="#">
+                                About us
+                            </a>
+                        </li>
+                        <li>
+                            <a class="footer__link" href="#">
+                                Return Policy
+                            </a>
+                        </li>
+                        <li>
+                            <a class="footer__link" href="#">
+                                Our Blog
+                            </a>
+                        </li>
+                        <li>
+                            <a class="footer__link" href="#">
+                                Contact Us
+                            </a>
+                        </li>
+                        <li>
+                            <a class="footer__link" href="#">
+                                Terms & Condition
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__item">
+                    <span class="footer__title">
+                        Account
+                    </span>
+                    <ul class="footer__text">
+                        <li>
+                            <a class="footer__link" href="#">
+                                Your Account
+                            </a>
+                        </li>
+                        <li>
+                            <a class="footer__link" href="#">
+                                Checkout
+                            </a>
+                        </li>
+                        <li>
+                            <a class="footer__link" href="#">
+                                Login
+                            </a>
+                        </li>
+                        <li>
+                            <a class="footer__link" href="#">
+                                Register
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__item">
+                    <span class="footer__title">
+                        Newsletter
+                    </span>
+                    <div class="footer__text">
+                        <p>
+                            Subscribe by our newsletter and get update protidin.
+                        </p>
+                    </div>
+                    <form class="footer__form">
+                        <label class="sr-only" for="email-input">
+                            Enter your email
+                        </label>
+                        <input class="footer__input" id="email-input" type="email" name="email"
+                            placeholder="Email address" required
+                            oninvalid="this.setCustomValidity('fill in this field!')">
+                        <button class="footer__btn" type="submit">
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copy">
+                    ©2020 CopyRight Example. All rights reserved.
+                </p>
+                <ul class="footer__list">
+                    <li class="footer__item-nav">
+                        <a class="footer__link-nav" href="#">
+                            Home
+                        </a>
+                    </li>
+                    <li class="footer__item-nav">
+                        <a class="footer__link-nav" href="#">
+                            About
+                        </a>
+                    </li>
+                    <li class="footer__item-nav">
+                        <a class="footer__link-nav" href="#">
+                            Blog
+                        </a>
+                    </li>
+                    <li class="footer__item-nav">
+                        <a class="footer__link-nav" href="#">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.min.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detalis</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="https://yoursite.ru/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="menu">
+                <a class="logo__link" href="#">
+                    <img class="logo" src="images/logo.png" alt="logo">
+                </a>
+                <button class="menu__btn" type="button">
+                    <span></span>
+                    <span class="sr-only">open menu</span>
+                </button>
+                <ul class="menu__items">
+                    <li class="menu__item">
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link menu__link--active" href="#">
+                            Home+
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="abaut-us.html">
+                            About
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#services">
+                            Services
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="">
+                            Pages+
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="">
+                            News
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="contacts.html">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+                <div class="nav">
+                    <a class="nav__item nav__item--search" href="#">
+                        <svg class="nav__svg" xmlns="http://www.w3.org/2000/svg" width="15.28" height="15.281"
+                            viewBox="0 0 15.28 15.281">
+                            <path fill="#243f4d" fill-rule="evenodd"
+                                d="M1547.7,72.076a0.617,0.617,0,0,1,.75.485,2.583,2.583,0,0,0,.78,1.489,3.036,3.036,0,0,0,1.49.777,0.636,0.636,0,0,1,.49.743,0.649,0.649,0,0,1-.72.515,4.21,4.21,0,0,1-2.14-1.13,4.164,4.164,0,0,1-1.13-2.136A0.6,0.6,0,0,1,1547.7,72.076ZM1550.98,66a6.267,6.267,0,0,1,6.28,6.257,6.136,6.136,0,0,1-.57,2.6l2.34,2.036c1.7,1.746.74,3.266,0.29,3.717-0.42.454-1.99,1.414-3.73-.292l-2.06-2.35A6.261,6.261,0,1,1,1550.98,66Zm5.55,13.517a1.352,1.352,0,0,0,1.88.226,1.313,1.313,0,0,0-.23-1.874l-2.16-1.88a6.236,6.236,0,0,1-1.37,1.34Zm-5.55-2.312a4.948,4.948,0,1,0-4.97-4.948A4.963,4.963,0,0,0,1550.98,77.2Z"
+                                transform="translate(-1544.72 -66)" />
+                        </svg>
+                        <span class="sr-only">product search</span>
+                    </a>
+                    <a class=" nav__item nav__item--heart" href="#">
+                        <svg class="nav__hert" xmlns="http://www.w3.org/2000/svg" width="17.87" height="15.531"
+                            viewBox="0 0 17.87 15.531">
+                            <path fill="#243f4d" fill-rule="evenodd"
+                                d="M1648.91,86.245a0.731,0.731,0,0,1-.28-0.056c-0.35-.15-8.65-3.749-8.65-10.76a28.181,28.181,0,0,0,13.05-4.707,4.817,4.817,0,0,1,4.81,4.684c0,7.034-8.29,10.634-8.65,10.783A0.7,0.7,0,0,1,1648.91,86.245Zm-4.11-14.138a3.427,3.427,0,0,0-3.41,3.346c0,5.407,6.13,8.662,7.52,9.334,1.4-.672,7.52-3.93,7.52-9.358a3.406,3.406,0,0,0-6.81.024,0.709,0.709,0,0,1-.71.669h0a0.694,0.694,0,0,1-.7-0.669A3.427,3.427,0,0,0,1644.8,72.106Z"
+                                transform="translate(-1639.97 -70.719)" />
+                        </svg>
+                        <span class="nav__num">0</span>
+                        <span class="sr-only">liked week-products</span>
+                    </a>
+                    <a class=" nav__item nav__item--basket" href="#">
+                        <svg class="nav__basket" xmlns="http://www.w3.org/2000/svg" width="18.94" height="16.969"
+                            viewBox="0 0 18.94 16.969">
+                            <path fill="#243f4d" fill-rule="evenodd"
+                                d="M1721.53,85.978a2.073,2.073,0,1,1,0-4.147h0a2.056,2.056,0,0,1,1.46.6,2.03,2.03,0,0,1,.61,1.466A2.071,2.071,0,0,1,1721.53,85.978Zm0-2.963h0a0.889,0.889,0,1,0,.34,1.71,0.9,0.9,0,0,0,.55-0.824,0.92,0.92,0,0,0-.26-0.629A0.9,0.9,0,0,0,1721.53,83.015Zm8.39,2.963a2.045,2.045,0,0,1-1.46-.607,2.068,2.068,0,0,1,1.46-3.54h0a1.953,1.953,0,0,1,1.47.6,2.085,2.085,0,0,1-.67,3.383A2.093,2.093,0,0,1,1729.92,85.978Zm0-2.963h0a0.978,0.978,0,0,0-.82.548,0.887,0.887,0,0,0,1.16,1.161,0.891,0.891,0,0,0,.29-1.452A0.9,0.9,0,0,0,1729.92,83.015Zm-11.27.164a0.562,0.562,0,0,1-.25-0.056,0.59,0.59,0,0,1-.29-0.787,3.686,3.686,0,0,1,3.05-2.151l-1.05-5.391a0.591,0.591,0,1,1,1.16-.228l1.09,5.578h9.43l1.8-6.771h-13.3a4.346,4.346,0,0,1-4.28-3.693,0.587,0.587,0,0,1,.49-0.673,0.6,0.6,0,0,1,.68.5,3.159,3.159,0,0,0,3.11,2.682h14.07a0.582,0.582,0,0,1,.47.232,0.594,0.594,0,0,1,.11.513l-2.13,7.956a0.59,0.59,0,0,1-.57.44h-10.36a0.03,0.03,0,0,0-.02,0,2.66,2.66,0,0,0-2.68,1.51A0.586,0.586,0,0,1,1718.65,83.178Z"
+                                transform="translate(-1716 -69)" />
+                        </svg>
+                        <span class="nav__num">0</span>
+                        <span class="sr-only">cart</span>
+                    </a>
+                    <a class=" nav__item nav__item--burger" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20.03" height="20.031"
+                            viewBox="0 0 20.03 20.031">
+                            <path fill="#ffffff" fill-rule="evenodd"
+                                d="M1813.15,67.881a2.146,2.146,0,1,1,2.14-2.145A2.145,2.145,0,0,1,1813.15,67.881Zm0,7.869a2.146,2.146,0,1,1,2.14-2.147A2.146,2.146,0,0,1,1813.15,75.75Zm0,7.868a2.146,2.146,0,1,1,2.14-2.146A2.145,2.145,0,0,1,1813.15,83.618Zm7.86-15.737a2.146,2.146,0,1,1,2.15-2.145A2.143,2.143,0,0,1,1821.01,67.881Zm0,7.869a2.146,2.146,0,1,1,2.15-2.147A2.144,2.144,0,0,1,1821.01,75.75Zm0,7.868a2.146,2.146,0,1,1,2.15-2.146A2.143,2.143,0,0,1,1821.01,83.618Zm7.87-15.737a2.146,2.146,0,1,1,2.15-2.145A2.143,2.143,0,0,1,1828.88,67.881Zm0,7.869a2.146,2.146,0,1,1,2.15-2.147A2.144,2.144,0,0,1,1828.88,75.75Zm0,7.868a2.146,2.146,0,1,1,2.15-2.146A2.143,2.143,0,0,1,1828.88,83.618Z"
+                                transform="translate(-1811 -63.594)" />
+                        </svg>
+                        <span class="sr-only">menu</span>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <section class="top">
+            <div class="breadcrumbs  breadcrumbs__detalis">
+                <h2 class="breadcrumbs__title">
+                    Product Detalis
+                </h2>
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__item">
+                        <a class="breadcrumbs__link" href="#">
+                            Home
+                        </a>
+                        <span class="breadcrumbs__delimiter">/</span>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <a class="breadcrumbs__link" href="#">
+                            Product Detalis
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="product-detalis">
+            <div class="container container--sm">
+                <div class="product-detalis__inner">
+                    <ul class="product-detalis-slider">
+                        <li class="product-detalis-slider__item">
+                            <img class="product-detalis-slider__img" src="images/slider-product-detalis/lampa1.jpg"
+                                alt="lampa">
+                        </li>
+                        <li class="product-detalis-slider__item">
+                            <img class="product-detalis-slider__img" src="images/slider-product-detalis/lampa2.jpg"
+                                alt="lamp detail">
+                        </li>
+                        <li class="product-detalis-slider__item">
+                            <img class="product-detalis-slider__img" src="images/slider-product-detalis/lampa3.jpg"
+                                alt="lamp detail">
+                        </li>
+                    </ul>
+                    <ul class="product-detalis-slider-big">
+                        <li class="product-detalis-slider-big__item">
+                            <img class="product-detalis-slider-big__images" src="images/lampa3.jpg" alt="lampa">
+                        </li>
+                        <li class="product-detalis-slider-big__item">
+                            <img class="product-detalis-slider-big__images"
+                                src="images/slider-product-detalis/lampa2.jpg" alt="lamp detail">
+                        </li>
+                        <li class="product-detalis-slider-big__item">
+                            <img class="product-detalis-slider-big__images"
+                                src="images/slider-product-detalis/lampa3.jpg" alt="lamp detail">
+                        </li>
+                    </ul>
+                    <ul class="product-detalis__list">
+                        <li class="product-detalis-list__item">
+                            <h4 class="product-detalis__title">
+                                Pendant lamp
+                            </h4>
+                            <div class="product-detalis__star" data-rateyo-rating="4">
+                            </div>
+                            <p class="product-detalis__price">
+                                23 <span>$</span>
+                            </p>
+                            <p class="product-detalis__text">
+                                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                aliquip ex ea commodo
+                            </p>
+                            <form class="product-detalis__form">
+                                <label class="product-detalis__label" for="input-number">
+                                    <input class="product-detalis__input" type="number" value="1" id="input-number"
+                                        min="1">
+                                </label>
+                                <button class="product-detalis__button btn" type="submit">
+                                    Add to cart
+                                </button>
+                            </form>
+                            <div class="product-detalis__info">
+                                <p>SKU: 014</p>
+                                <p>Category: Lights</p>
+                                <p>Tag: Decorative</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="product-tabs">
+                    <div class="product-tabs__item-top">
+                        <a class=" product-tabs__link  product-tabs__link--active" href="#tab-1">
+                            Description
+                        </a>
+                        <a class=" product-tabs__link  product-tabs__link--information" href="#tab-2">
+                            Additional information
+                        </a>
+                        <a class="product-tabs__link" href="#tab-3">
+                            Reviews (2)
+                        </a>
+                    </div>
+                    <div class="product-tabs__content">
+                        <div class="product-tabs__text product-tabs__text--active" id="tab-1">
+                            <p>
+                                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                                magna
+                                aliqua. Ut
+                                enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                                ea
+                                commodo Lorem
+                                ipsum dolor sit amet, consectetur adipisicing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                veniam,
+                                quis
+                                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            </p>
+                        </div>
+                        <div class="product-tabs__text" id="tab-2">
+                            <p>
+                                content2
+                            </p>
+                        </div>
+                        <div class="product-tabs__text" id="tab-3">
+                            <p>
+                                content3
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="related-product">
+            <div class="container container--sm">
+                <div class="main">
+                    <div class="swiper myswiper">
+                        <h2 class="related-product__title title">
+                            Related products
+                        </h2>
+                        <div class="swiper-button">
+                            <div class="swiper-button-next">
+                                <i class="fa fa-long-arrow-left" aria-hidden="true">
+                                </i>
+                            </div>
+                            <div class="swiper-button-prev">
+                                <i class="fa fa-long-arrow-right" aria-hidden="true">
+                                </i>
+                            </div>
+                        </div>
+
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <div class="related-product__item">
+                                    <div class="related-product__box">
+                                        <img class="related-product__img" src="images/filter-product/1.png"
+                                            alt="product">
+                                        <ul class="week-products-list related-product__list">
+                                            <li class="week-products-list__icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="15.28" height="15.281"
+                                                    viewBox="0 0 15.28 15.281">
+                                                    <path fill="#a3bbc8" fill-rule="evenodd"
+                                                        d="M1547.7,72.076a0.617,0.617,0,0,1,.75.485,2.583,2.583,0,0,0,.78,1.489,3.036,3.036,0,0,0,1.49.777,0.636,0.636,0,0,1,.49.743,0.649,0.649,0,0,1-.72.515,4.21,4.21,0,0,1-2.14-1.13,4.164,4.164,0,0,1-1.13-2.136A0.6,0.6,0,0,1,1547.7,72.076ZM1550.98,66a6.267,6.267,0,0,1,6.28,6.257,6.136,6.136,0,0,1-.57,2.6l2.34,2.036c1.7,1.746.74,3.266,0.29,3.717-0.42.454-1.99,1.414-3.73-.292l-2.06-2.35A6.261,6.261,0,1,1,1550.98,66Zm5.55,13.517a1.352,1.352,0,0,0,1.88.226,1.313,1.313,0,0,0-.23-1.874l-2.16-1.88a6.236,6.236,0,0,1-1.37,1.34Zm-5.55-2.312a4.948,4.948,0,1,0-4.97-4.948A4.963,4.963,0,0,0,1550.98,77.2Z"
+                                                        transform="translate(-1544.72 -66)" />
+                                                </svg>
+                                                <span class="sr-only">product search</span>
+                                            </li>
+                                            <li class="week-products-list__icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="18.94" height="16.969"
+                                                    viewBox="0 0 18.94 16.969">
+                                                    <path fill="#a3bbc8" fill-rule="evenodd"
+                                                        d="M1721.53,85.978a2.073,2.073,0,1,1,0-4.147h0a2.056,2.056,0,0,1,1.46.6,2.03,2.03,0,0,1,.61,1.466A2.071,2.071,0,0,1,1721.53,85.978Zm0-2.963h0a0.889,0.889,0,1,0,.34,1.71,0.9,0.9,0,0,0,.55-0.824,0.92,0.92,0,0,0-.26-0.629A0.9,0.9,0,0,0,1721.53,83.015Zm8.39,2.963a2.045,2.045,0,0,1-1.46-.607,2.068,2.068,0,0,1,1.46-3.54h0a1.953,1.953,0,0,1,1.47.6,2.085,2.085,0,0,1-.67,3.383A2.093,2.093,0,0,1,1729.92,85.978Zm0-2.963h0a0.978,0.978,0,0,0-.82.548,0.887,0.887,0,0,0,1.16,1.161,0.891,0.891,0,0,0,.29-1.452A0.9,0.9,0,0,0,1729.92,83.015Zm-11.27.164a0.562,0.562,0,0,1-.25-0.056,0.59,0.59,0,0,1-.29-0.787,3.686,3.686,0,0,1,3.05-2.151l-1.05-5.391a0.591,0.591,0,1,1,1.16-.228l1.09,5.578h9.43l1.8-6.771h-13.3a4.346,4.346,0,0,1-4.28-3.693,0.587,0.587,0,0,1,.49-0.673,0.6,0.6,0,0,1,.68.5,3.159,3.159,0,0,0,3.11,2.682h14.07a0.582,0.582,0,0,1,.47.232,0.594,0.594,0,0,1,.11.513l-2.13,7.956a0.59,0.59,0,0,1-.57.44h-10.36a0.03,0.03,0,0,0-.02,0,2.66,2.66,0,0,0-2.68,1.51A0.586,0.586,0,0,1,1718.65,83.178Z"
+                                                        transform="translate(-1716 -69)" />
+                                                </svg>
+                                                <span class="sr-only">cart</span>
+                                            </li>
+                                            <li class="week-products-list__icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="17.87" height="15.531"
+                                                    viewBox="0 0 17.87 15.531">
+                                                    <path fill="#a3bbc8" fill-rule="evenodd"
+                                                        d="M1648.91,86.245a0.731,0.731,0,0,1-.28-0.056c-0.35-.15-8.65-3.749-8.65-10.76a28.181,28.181,0,0,0,13.05-4.707,4.817,4.817,0,0,1,4.81,4.684c0,7.034-8.29,10.634-8.65,10.783A0.7,0.7,0,0,1,1648.91,86.245Zm-4.11-14.138a3.427,3.427,0,0,0-3.41,3.346c0,5.407,6.13,8.662,7.52,9.334,1.4-.672,7.52-3.93,7.52-9.358a3.406,3.406,0,0,0-6.81.024,0.709,0.709,0,0,1-.71.669h0a0.694,0.694,0,0,1-.7-0.669A3.427,3.427,0,0,0,1644.8,72.106Z"
+                                                        transform="translate(-1639.97 -70.719)" />
+                                                </svg>
+                                                <span class="sr-only">liked week-products</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <h3 class="related-product__subtitle">
+                                        Wooden radio
+                                    </h3>
+                                    <div class="related-product__text">
+                                        <p>
+                                            <span>$</span>
+                                            29.00
+                                        </p>
+                                    </div>
+                                </div>
+                            <li class="swiper-slide">
+                                <div class="related-product__item">
+                                    <div class="div"></div>
+                                    <div class="related-product__box">
+                                        <img class="related-product__img" src="images/filter-product/2.png"
+                                            alt="product">
+                                        <ul class="week-products-list related-product__list">
+                                            <li class="week-products-list__icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="15.28" height="15.281"
+                                                    viewBox="0 0 15.28 15.281">
+                                                    <path fill="#a3bbc8" fill-rule="evenodd"
+                                                        d="M1547.7,72.076a0.617,0.617,0,0,1,.75.485,2.583,2.583,0,0,0,.78,1.489,3.036,3.036,0,0,0,1.49.777,0.636,0.636,0,0,1,.49.743,0.649,0.649,0,0,1-.72.515,4.21,4.21,0,0,1-2.14-1.13,4.164,4.164,0,0,1-1.13-2.136A0.6,0.6,0,0,1,1547.7,72.076ZM1550.98,66a6.267,6.267,0,0,1,6.28,6.257,6.136,6.136,0,0,1-.57,2.6l2.34,2.036c1.7,1.746.74,3.266,0.29,3.717-0.42.454-1.99,1.414-3.73-.292l-2.06-2.35A6.261,6.261,0,1,1,1550.98,66Zm5.55,13.517a1.352,1.352,0,0,0,1.88.226,1.313,1.313,0,0,0-.23-1.874l-2.16-1.88a6.236,6.236,0,0,1-1.37,1.34Zm-5.55-2.312a4.948,4.948,0,1,0-4.97-4.948A4.963,4.963,0,0,0,1550.98,77.2Z"
+                                                        transform="translate(-1544.72 -66)" />
+                                                </svg>
+                                                <span class="sr-only">product search</span>
+                                            </li>
+                                            <li class="week-products-list__icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="18.94" height="16.969"
+                                                    viewBox="0 0 18.94 16.969">
+                                                    <path fill="#a3bbc8" fill-rule="evenodd"
+                                                        d="M1721.53,85.978a2.073,2.073,0,1,1,0-4.147h0a2.056,2.056,0,0,1,1.46.6,2.03,2.03,0,0,1,.61,1.466A2.071,2.071,0,0,1,1721.53,85.978Zm0-2.963h0a0.889,0.889,0,1,0,.34,1.71,0.9,0.9,0,0,0,.55-0.824,0.92,0.92,0,0,0-.26-0.629A0.9,0.9,0,0,0,1721.53,83.015Zm8.39,2.963a2.045,2.045,0,0,1-1.46-.607,2.068,2.068,0,0,1,1.46-3.54h0a1.953,1.953,0,0,1,1.47.6,2.085,2.085,0,0,1-.67,3.383A2.093,2.093,0,0,1,1729.92,85.978Zm0-2.963h0a0.978,0.978,0,0,0-.82.548,0.887,0.887,0,0,0,1.16,1.161,0.891,0.891,0,0,0,.29-1.452A0.9,0.9,0,0,0,1729.92,83.015Zm-11.27.164a0.562,0.562,0,0,1-.25-0.056,0.59,0.59,0,0,1-.29-0.787,3.686,3.686,0,0,1,3.05-2.151l-1.05-5.391a0.591,0.591,0,1,1,1.16-.228l1.09,5.578h9.43l1.8-6.771h-13.3a4.346,4.346,0,0,1-4.28-3.693,0.587,0.587,0,0,1,.49-0.673,0.6,0.6,0,0,1,.68.5,3.159,3.159,0,0,0,3.11,2.682h14.07a0.582,0.582,0,0,1,.47.232,0.594,0.594,0,0,1,.11.513l-2.13,7.956a0.59,0.59,0,0,1-.57.44h-10.36a0.03,0.03,0,0,0-.02,0,2.66,2.66,0,0,0-2.68,1.51A0.586,0.586,0,0,1,1718.65,83.178Z"
+                                                        transform="translate(-1716 -69)" />
+                                                </svg>
+                                                <span class="sr-only">cart</span>
+                                            </li>
+                                            <li class="week-products-list__icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="17.87" height="15.531"
+                                                    viewBox="0 0 17.87 15.531">
+                                                    <path fill="#a3bbc8" fill-rule="evenodd"
+                                                        d="M1648.91,86.245a0.731,0.731,0,0,1-.28-0.056c-0.35-.15-8.65-3.749-8.65-10.76a28.181,28.181,0,0,0,13.05-4.707,4.817,4.817,0,0,1,4.81,4.684c0,7.034-8.29,10.634-8.65,10.783A0.7,0.7,0,0,1,1648.91,86.245Zm-4.11-14.138a3.427,3.427,0,0,0-3.41,3.346c0,5.407,6.13,8.662,7.52,9.334,1.4-.672,7.52-3.93,7.52-9.358a3.406,3.406,0,0,0-6.81.024,0.709,0.709,0,0,1-.71.669h0a0.694,0.694,0,0,1-.7-0.669A3.427,3.427,0,0,0,1644.8,72.106Z"
+                                                        transform="translate(-1639.97 -70.719)" />
+                                                </svg>
+                                                <span class="sr-only">liked week-products</span>
+                                                <div class="div"></div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <h3 class="related-product__subtitle">
+                                        Wooden chair
+                                    </h3>
+                                    <div class="related-product__text">
+                                        <p>$29.00</p>
+                                    </div>
+                                </div>
+                            <li class="swiper-slide">
+                                <div class="related-product__item">
+                                    <div class="related-product__box">
+                                        <img class="related-product__img" src="images/filter-product/3.png"
+                                            alt="product">
+                                        <ul class="week-products-list related-product__list">
+                                            <li class="week-products-list__icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="15.28" height="15.281"
+                                                    viewBox="0 0 15.28 15.281">
+                                                    <path fill="#a3bbc8" fill-rule="evenodd"
+                                                        d="M1547.7,72.076a0.617,0.617,0,0,1,.75.485,2.583,2.583,0,0,0,.78,1.489,3.036,3.036,0,0,0,1.49.777,0.636,0.636,0,0,1,.49.743,0.649,0.649,0,0,1-.72.515,4.21,4.21,0,0,1-2.14-1.13,4.164,4.164,0,0,1-1.13-2.136A0.6,0.6,0,0,1,1547.7,72.076ZM1550.98,66a6.267,6.267,0,0,1,6.28,6.257,6.136,6.136,0,0,1-.57,2.6l2.34,2.036c1.7,1.746.74,3.266,0.29,3.717-0.42.454-1.99,1.414-3.73-.292l-2.06-2.35A6.261,6.261,0,1,1,1550.98,66Zm5.55,13.517a1.352,1.352,0,0,0,1.88.226,1.313,1.313,0,0,0-.23-1.874l-2.16-1.88a6.236,6.236,0,0,1-1.37,1.34Zm-5.55-2.312a4.948,4.948,0,1,0-4.97-4.948A4.963,4.963,0,0,0,1550.98,77.2Z"
+                                                        transform="translate(-1544.72 -66)" />
+                                                </svg>
+                                                <span class="sr-only">product search</span>
+                                            </li>
+                                            <li class="week-products-list__icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="18.94" height="16.969"
+                                                    viewBox="0 0 18.94 16.969">
+                                                    <path fill="#a3bbc8" fill-rule="evenodd"
+                                                        d="M1721.53,85.978a2.073,2.073,0,1,1,0-4.147h0a2.056,2.056,0,0,1,1.46.6,2.03,2.03,0,0,1,.61,1.466A2.071,2.071,0,0,1,1721.53,85.978Zm0-2.963h0a0.889,0.889,0,1,0,.34,1.71,0.9,0.9,0,0,0,.55-0.824,0.92,0.92,0,0,0-.26-0.629A0.9,0.9,0,0,0,1721.53,83.015Zm8.39,2.963a2.045,2.045,0,0,1-1.46-.607,2.068,2.068,0,0,1,1.46-3.54h0a1.953,1.953,0,0,1,1.47.6,2.085,2.085,0,0,1-.67,3.383A2.093,2.093,0,0,1,1729.92,85.978Zm0-2.963h0a0.978,0.978,0,0,0-.82.548,0.887,0.887,0,0,0,1.16,1.161,0.891,0.891,0,0,0,.29-1.452A0.9,0.9,0,0,0,1729.92,83.015Zm-11.27.164a0.562,0.562,0,0,1-.25-0.056,0.59,0.59,0,0,1-.29-0.787,3.686,3.686,0,0,1,3.05-2.151l-1.05-5.391a0.591,0.591,0,1,1,1.16-.228l1.09,5.578h9.43l1.8-6.771h-13.3a4.346,4.346,0,0,1-4.28-3.693,0.587,0.587,0,0,1,.49-0.673,0.6,0.6,0,0,1,.68.5,3.159,3.159,0,0,0,3.11,2.682h14.07a0.582,0.582,0,0,1,.47.232,0.594,0.594,0,0,1,.11.513l-2.13,7.956a0.59,0.59,0,0,1-.57.44h-10.36a0.03,0.03,0,0,0-.02,0,2.66,2.66,0,0,0-2.68,1.51A0.586,0.586,0,0,1,1718.65,83.178Z"
+                                                        transform="translate(-1716 -69)" />
+                                                </svg>
+                                                <span class="sr-only">cart</span>
+                                            </li>
+                                            <li class="week-products-list__icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="17.87" height="15.531"
+                                                    viewBox="0 0 17.87 15.531">
+                                                    <path fill="#a3bbc8" fill-rule="evenodd"
+                                                        d="M1648.91,86.245a0.731,0.731,0,0,1-.28-0.056c-0.35-.15-8.65-3.749-8.65-10.76a28.181,28.181,0,0,0,13.05-4.707,4.817,4.817,0,0,1,4.81,4.684c0,7.034-8.29,10.634-8.65,10.783A0.7,0.7,0,0,1,1648.91,86.245Zm-4.11-14.138a3.427,3.427,0,0,0-3.41,3.346c0,5.407,6.13,8.662,7.52,9.334,1.4-.672,7.52-3.93,7.52-9.358a3.406,3.406,0,0,0-6.81.024,0.709,0.709,0,0,1-.71.669h0a0.694,0.694,0,0,1-.7-0.669A3.427,3.427,0,0,0,1644.8,72.106Z"
+                                                        transform="translate(-1639.97 -70.719)" />
+                                                </svg>
+                                                <span class="sr-only">liked week-products</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <h3 class="related-product__subtitle">
+                                        White chair
+                                    </h3>
+                                    <div class="related-product__text">
+                                        <p>$29.00</p>
+                                    </div>
+                                </div>
+                            <li class="swiper-slide">
+                                <div class="related-product__item">
+                                    <div class="related-product__box">
+                                        <img class="related-product__img" src="images/filter-product/4.png"
+                                            alt="product">
+                                        <ul class="week-products-list related-product__list">
+                                            <li class="week-products-list__icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="15.28" height="15.281"
+                                                    viewBox="0 0 15.28 15.281">
+                                                    <path fill="#a3bbc8" fill-rule="evenodd"
+                                                        d="M1547.7,72.076a0.617,0.617,0,0,1,.75.485,2.583,2.583,0,0,0,.78,1.489,3.036,3.036,0,0,0,1.49.777,0.636,0.636,0,0,1,.49.743,0.649,0.649,0,0,1-.72.515,4.21,4.21,0,0,1-2.14-1.13,4.164,4.164,0,0,1-1.13-2.136A0.6,0.6,0,0,1,1547.7,72.076ZM1550.98,66a6.267,6.267,0,0,1,6.28,6.257,6.136,6.136,0,0,1-.57,2.6l2.34,2.036c1.7,1.746.74,3.266,0.29,3.717-0.42.454-1.99,1.414-3.73-.292l-2.06-2.35A6.261,6.261,0,1,1,1550.98,66Zm5.55,13.517a1.352,1.352,0,0,0,1.88.226,1.313,1.313,0,0,0-.23-1.874l-2.16-1.88a6.236,6.236,0,0,1-1.37,1.34Zm-5.55-2.312a4.948,4.948,0,1,0-4.97-4.948A4.963,4.963,0,0,0,1550.98,77.2Z"
+                                                        transform="translate(-1544.72 -66)" />
+                                                </svg>
+                                                <span class="sr-only">product search</span>
+                                            </li>
+                                            <li class="week-products-list__icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="18.94" height="16.969"
+                                                    viewBox="0 0 18.94 16.969">
+                                                    <path fill="#a3bbc8" fill-rule="evenodd"
+                                                        d="M1721.53,85.978a2.073,2.073,0,1,1,0-4.147h0a2.056,2.056,0,0,1,1.46.6,2.03,2.03,0,0,1,.61,1.466A2.071,2.071,0,0,1,1721.53,85.978Zm0-2.963h0a0.889,0.889,0,1,0,.34,1.71,0.9,0.9,0,0,0,.55-0.824,0.92,0.92,0,0,0-.26-0.629A0.9,0.9,0,0,0,1721.53,83.015Zm8.39,2.963a2.045,2.045,0,0,1-1.46-.607,2.068,2.068,0,0,1,1.46-3.54h0a1.953,1.953,0,0,1,1.47.6,2.085,2.085,0,0,1-.67,3.383A2.093,2.093,0,0,1,1729.92,85.978Zm0-2.963h0a0.978,0.978,0,0,0-.82.548,0.887,0.887,0,0,0,1.16,1.161,0.891,0.891,0,0,0,.29-1.452A0.9,0.9,0,0,0,1729.92,83.015Zm-11.27.164a0.562,0.562,0,0,1-.25-0.056,0.59,0.59,0,0,1-.29-0.787,3.686,3.686,0,0,1,3.05-2.151l-1.05-5.391a0.591,0.591,0,1,1,1.16-.228l1.09,5.578h9.43l1.8-6.771h-13.3a4.346,4.346,0,0,1-4.28-3.693,0.587,0.587,0,0,1,.49-0.673,0.6,0.6,0,0,1,.68.5,3.159,3.159,0,0,0,3.11,2.682h14.07a0.582,0.582,0,0,1,.47.232,0.594,0.594,0,0,1,.11.513l-2.13,7.956a0.59,0.59,0,0,1-.57.44h-10.36a0.03,0.03,0,0,0-.02,0,2.66,2.66,0,0,0-2.68,1.51A0.586,0.586,0,0,1,1718.65,83.178Z"
+                                                        transform="translate(-1716 -69)" />
+                                                </svg>
+                                                <span class="sr-only">cart</span>
+                                            </li>
+                                            <li class="week-products-list__icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="17.87" height="15.531"
+                                                    viewBox="0 0 17.87 15.531">
+                                                    <path fill="#a3bbc8" fill-rule="evenodd"
+                                                        d="M1648.91,86.245a0.731,0.731,0,0,1-.28-0.056c-0.35-.15-8.65-3.749-8.65-10.76a28.181,28.181,0,0,0,13.05-4.707,4.817,4.817,0,0,1,4.81,4.684c0,7.034-8.29,10.634-8.65,10.783A0.7,0.7,0,0,1,1648.91,86.245Zm-4.11-14.138a3.427,3.427,0,0,0-3.41,3.346c0,5.407,6.13,8.662,7.52,9.334,1.4-.672,7.52-3.93,7.52-9.358a3.406,3.406,0,0,0-6.81.024,0.709,0.709,0,0,1-.71.669h0a0.694,0.694,0,0,1-.7-0.669A3.427,3.427,0,0,0,1644.8,72.106Z"
+                                                        transform="translate(-1639.97 -70.719)" />
+                                                </svg>
+                                                <span class="sr-only">liked week-products</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <h3 class="related-product__subtitle">
+                                        Retro table
+                                    </h3>
+                                    <div class="related-product__text">
+                                        <p>$29.00</p>
+                                    </div>
+                                </div>
+                            <li class="swiper-slide">
+                                <div class="related-product__item">
+                                    <div class="related-product__box">
+                                        <img class="related-product__img" src="images/filter-product/5.png"
+                                            alt="product">
+                                        <ul class="week-products-list related-product__list">
+                                            <li class="week-products-list__icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="15.28" height="15.281"
+                                                    viewBox="0 0 15.28 15.281">
+                                                    <path fill="#a3bbc8" fill-rule="evenodd"
+                                                        d="M1547.7,72.076a0.617,0.617,0,0,1,.75.485,2.583,2.583,0,0,0,.78,1.489,3.036,3.036,0,0,0,1.49.777,0.636,0.636,0,0,1,.49.743,0.649,0.649,0,0,1-.72.515,4.21,4.21,0,0,1-2.14-1.13,4.164,4.164,0,0,1-1.13-2.136A0.6,0.6,0,0,1,1547.7,72.076ZM1550.98,66a6.267,6.267,0,0,1,6.28,6.257,6.136,6.136,0,0,1-.57,2.6l2.34,2.036c1.7,1.746.74,3.266,0.29,3.717-0.42.454-1.99,1.414-3.73-.292l-2.06-2.35A6.261,6.261,0,1,1,1550.98,66Zm5.55,13.517a1.352,1.352,0,0,0,1.88.226,1.313,1.313,0,0,0-.23-1.874l-2.16-1.88a6.236,6.236,0,0,1-1.37,1.34Zm-5.55-2.312a4.948,4.948,0,1,0-4.97-4.948A4.963,4.963,0,0,0,1550.98,77.2Z"
+                                                        transform="translate(-1544.72 -66)" />
+                                                </svg>
+                                                <span class="sr-only">product search</span>
+                                            </li>
+                                            <li class="week-products-list__icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="18.94" height="16.969"
+                                                    viewBox="0 0 18.94 16.969">
+                                                    <path fill="#a3bbc8" fill-rule="evenodd"
+                                                        d="M1721.53,85.978a2.073,2.073,0,1,1,0-4.147h0a2.056,2.056,0,0,1,1.46.6,2.03,2.03,0,0,1,.61,1.466A2.071,2.071,0,0,1,1721.53,85.978Zm0-2.963h0a0.889,0.889,0,1,0,.34,1.71,0.9,0.9,0,0,0,.55-0.824,0.92,0.92,0,0,0-.26-0.629A0.9,0.9,0,0,0,1721.53,83.015Zm8.39,2.963a2.045,2.045,0,0,1-1.46-.607,2.068,2.068,0,0,1,1.46-3.54h0a1.953,1.953,0,0,1,1.47.6,2.085,2.085,0,0,1-.67,3.383A2.093,2.093,0,0,1,1729.92,85.978Zm0-2.963h0a0.978,0.978,0,0,0-.82.548,0.887,0.887,0,0,0,1.16,1.161,0.891,0.891,0,0,0,.29-1.452A0.9,0.9,0,0,0,1729.92,83.015Zm-11.27.164a0.562,0.562,0,0,1-.25-0.056,0.59,0.59,0,0,1-.29-0.787,3.686,3.686,0,0,1,3.05-2.151l-1.05-5.391a0.591,0.591,0,1,1,1.16-.228l1.09,5.578h9.43l1.8-6.771h-13.3a4.346,4.346,0,0,1-4.28-3.693,0.587,0.587,0,0,1,.49-0.673,0.6,0.6,0,0,1,.68.5,3.159,3.159,0,0,0,3.11,2.682h14.07a0.582,0.582,0,0,1,.47.232,0.594,0.594,0,0,1,.11.513l-2.13,7.956a0.59,0.59,0,0,1-.57.44h-10.36a0.03,0.03,0,0,0-.02,0,2.66,2.66,0,0,0-2.68,1.51A0.586,0.586,0,0,1,1718.65,83.178Z"
+                                                        transform="translate(-1716 -69)" />
+                                                </svg>
+                                                <span class="sr-only">cart</span>
+                                            </li>
+                                            <li class="week-products-list__icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="17.87" height="15.531"
+                                                    viewBox="0 0 17.87 15.531">
+                                                    <path fill="#a3bbc8" fill-rule="evenodd"
+                                                        d="M1648.91,86.245a0.731,0.731,0,0,1-.28-0.056c-0.35-.15-8.65-3.749-8.65-10.76a28.181,28.181,0,0,0,13.05-4.707,4.817,4.817,0,0,1,4.81,4.684c0,7.034-8.29,10.634-8.65,10.783A0.7,0.7,0,0,1,1648.91,86.245Zm-4.11-14.138a3.427,3.427,0,0,0-3.41,3.346c0,5.407,6.13,8.662,7.52,9.334,1.4-.672,7.52-3.93,7.52-9.358a3.406,3.406,0,0,0-6.81.024,0.709,0.709,0,0,1-.71.669h0a0.694,0.694,0,0,1-.7-0.669A3.427,3.427,0,0,0,1644.8,72.106Z"
+                                                        transform="translate(-1639.97 -70.719)" />
+                                                </svg>
+                                                <span class="sr-only">liked week-products</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <h3 class="related-product__subtitle">
+                                        Retro table
+                                    </h3>
+                                    <div class="related-product__text">
+                                        <p>$29.00</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="insights">
+            <div class="container container--sm">
+                <div class="insights__wraper">
+                    <h2 class="insights__title title">
+                        Our Insights & Articles
+                    </h2>
+                    <a class="insights__link" href="#">
+                        View All >
+                    </a>
+                </div>
+                <ul class="insights__items">
+                    <li class="insights__item">
+                        <article class="insights__cart  product">
+                            <a class="insights__link" href="#">
+                                <img class="insights__img" src=" images/insights/room1.jpg"
+                                    alt="Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam">
+                            </a>
+                            <div class="insights__box">
+                                <a class="insights__news" href="#">News</a>
+                                <a class="insights__link" href="#">
+                                    <h3 class="insights__subtitle">
+                                        Diusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    </h3>
+                                </a>
+                                <div class="blog-info insights__info">
+                                    <p class="blog-info__calendar">
+                                        <svg class="blog-info__svg" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="6pt" height="9pt"
+                                            viewBox="0 0 10 10" version="1.1">
+                                            <path style=" stroke:none;fill-rule:nonzero;fill:black;fill-opacity:1;"
+                                                d="M 0.722656 8.8125 L 2.335938 8.8125 L 2.335938 7.285156 L 0.722656 7.285156 Z M 2.695312 8.8125 L 4.496094 8.8125 L 4.496094 7.285156 L 2.695312 7.285156 Z M 0.722656 6.945312 L 2.335938 6.945312 L 2.335938 5.253906 L 0.722656 5.253906 Z M 2.695312 6.945312 L 4.496094 6.945312 L 4.496094 5.253906 L 2.695312 5.253906 Z M 0.722656 4.917969 L 2.335938 4.917969 L 2.335938 3.386719 L 0.722656 3.386719 Z M 4.851562 8.8125 L 6.652344 8.8125 L 6.652344 7.285156 L 4.851562 7.285156 Z M 2.695312 4.917969 L 4.496094 4.917969 L 4.496094 3.386719 L 2.695312 3.386719 Z M 7.011719 8.8125 L 8.628906 8.8125 L 8.628906 7.285156 L 7.011719 7.285156 Z M 4.851562 6.945312 L 6.652344 6.945312 L 6.652344 5.253906 L 4.851562 5.253906 Z M 2.878906 2.375 L 2.878906 0.847656 C 2.878906 0.753906 2.792969 0.675781 2.695312 0.675781 L 2.335938 0.675781 C 2.242188 0.675781 2.15625 0.753906 2.15625 0.847656 L 2.15625 2.375 C 2.15625 2.460938 2.242188 2.542969 2.335938 2.542969 L 2.695312 2.542969 C 2.792969 2.542969 2.878906 2.460938 2.878906 2.375 Z M 7.011719 6.945312 L 8.628906 6.945312 L 8.628906 5.253906 L 7.011719 5.253906 Z M 4.851562 4.917969 L 6.652344 4.917969 L 6.652344 3.386719 L 4.851562 3.386719 Z M 7.011719 4.917969 L 8.628906 4.917969 L 8.628906 3.386719 L 7.011719 3.386719 Z M 7.191406 2.375 L 7.191406 0.847656 C 7.191406 0.753906 7.105469 0.675781 7.011719 0.675781 L 6.652344 0.675781 C 6.554688 0.675781 6.472656 0.753906 6.472656 0.847656 L 6.472656 2.375 C 6.472656 2.460938 6.554688 2.542969 6.652344 2.542969 L 7.011719 2.542969 C 7.105469 2.542969 7.191406 2.460938 7.191406 2.375 Z M 9.347656 2.03125 L 9.347656 8.8125 C 9.347656 9.183594 9.023438 9.488281 8.628906 9.488281 L 0.722656 9.488281 C 0.328125 9.488281 0 9.183594 0 8.8125 L 0 2.03125 C 0 1.664062 0.328125 1.355469 0.722656 1.355469 L 1.4375 1.355469 L 1.4375 0.847656 C 1.4375 0.378906 1.839844 0 2.335938 0 L 2.695312 0 C 3.1875 0 3.59375 0.378906 3.59375 0.847656 L 3.59375 1.355469 L 5.753906 1.355469 L 5.753906 0.847656 C 5.753906 0.378906 6.160156 0 6.652344 0 L 7.011719 0 C 7.507812 0 7.910156 0.378906 7.910156 0.847656 L 7.910156 1.355469 L 8.628906 1.355469 C 9.023438 1.355469 9.347656 1.664062 9.347656 2.03125 Z M 9.347656 2.03125 " />
+                                        </svg>
+                                        <time datetime="2020-01-28T19:01:26+03:00"> 28 january, 2020</time>
+                                    </p>
+                                    <a class="blog-info__avtar" href="#">
+                                        <svg class="blog-info__svg" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="6pt" height="9pt"
+                                            viewBox="0 0 9 10" version="1.1">
+                                            <path style=" stroke:none;fill-rule:nonzero;fill:black;fill-opacity:1;"
+                                                d="M 6.300781 5.9375 C 5.722656 5.9375 5.445312 6.25 4.5 6.25 C 3.554688 6.25 3.277344 5.9375 2.699219 5.9375 C 1.210938 5.9375 0 7.113281 0 8.5625 L 0 9.0625 C 0 9.578125 0.433594 10 0.964844 10 L 8.035156 10 C 8.566406 10 9 9.578125 9 9.0625 L 9 8.5625 C 9 7.113281 7.789062 5.9375 6.300781 5.9375 Z M 8.035156 9.0625 L 0.964844 9.0625 L 0.964844 8.5625 C 0.964844 7.632812 1.742188 6.875 2.699219 6.875 C 2.992188 6.875 3.46875 7.1875 4.5 7.1875 C 5.539062 7.1875 6.003906 6.875 6.300781 6.875 C 7.257812 6.875 8.035156 7.632812 8.035156 8.5625 Z M 4.5 5.625 C 6.097656 5.625 7.394531 4.367188 7.394531 2.8125 C 7.394531 1.257812 6.097656 0 4.5 0 C 2.902344 0 1.605469 1.257812 1.605469 2.8125 C 1.605469 4.367188 2.902344 5.625 4.5 5.625 Z M 4.5 0.9375 C 5.5625 0.9375 6.429688 1.78125 6.429688 2.8125 C 6.429688 3.84375 5.5625 4.6875 4.5 4.6875 C 3.4375 4.6875 2.570312 3.84375 2.570312 2.8125 C 2.570312 1.78125 3.4375 0.9375 4.5 0.9375 Z M 4.5 0.9375 " />
+                                        </svg>
+                                        by admin
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="insights__item">
+                        <article class="insights__cart product">
+                            <a class="insights__link" href="#">
+                                <img class="insights__img" src="images/insights/room2.jpg"
+                                    alt="Aonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore">
+                            </a>
+                            <div class="insights__box">
+                                <a class="insights__news" href="#">News</a>
+                                <a class="insights__link" href="#">
+                                    <h3 class="insights__subtitle">
+                                        Aonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                                    </h3>
+                                </a>
+                                <div class="blog-info insights__info">
+                                    <p class="blog-info__calendar">
+                                        <svg class="blog-info__svg" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="6pt" height="9pt"
+                                            viewBox="0 0 10 10" version="1.1">
+                                            <path style=" stroke:none;fill-rule:nonzero;fill:black;fill-opacity:1;"
+                                                d="M 0.722656 8.8125 L 2.335938 8.8125 L 2.335938 7.285156 L 0.722656 7.285156 Z M 2.695312 8.8125 L 4.496094 8.8125 L 4.496094 7.285156 L 2.695312 7.285156 Z M 0.722656 6.945312 L 2.335938 6.945312 L 2.335938 5.253906 L 0.722656 5.253906 Z M 2.695312 6.945312 L 4.496094 6.945312 L 4.496094 5.253906 L 2.695312 5.253906 Z M 0.722656 4.917969 L 2.335938 4.917969 L 2.335938 3.386719 L 0.722656 3.386719 Z M 4.851562 8.8125 L 6.652344 8.8125 L 6.652344 7.285156 L 4.851562 7.285156 Z M 2.695312 4.917969 L 4.496094 4.917969 L 4.496094 3.386719 L 2.695312 3.386719 Z M 7.011719 8.8125 L 8.628906 8.8125 L 8.628906 7.285156 L 7.011719 7.285156 Z M 4.851562 6.945312 L 6.652344 6.945312 L 6.652344 5.253906 L 4.851562 5.253906 Z M 2.878906 2.375 L 2.878906 0.847656 C 2.878906 0.753906 2.792969 0.675781 2.695312 0.675781 L 2.335938 0.675781 C 2.242188 0.675781 2.15625 0.753906 2.15625 0.847656 L 2.15625 2.375 C 2.15625 2.460938 2.242188 2.542969 2.335938 2.542969 L 2.695312 2.542969 C 2.792969 2.542969 2.878906 2.460938 2.878906 2.375 Z M 7.011719 6.945312 L 8.628906 6.945312 L 8.628906 5.253906 L 7.011719 5.253906 Z M 4.851562 4.917969 L 6.652344 4.917969 L 6.652344 3.386719 L 4.851562 3.386719 Z M 7.011719 4.917969 L 8.628906 4.917969 L 8.628906 3.386719 L 7.011719 3.386719 Z M 7.191406 2.375 L 7.191406 0.847656 C 7.191406 0.753906 7.105469 0.675781 7.011719 0.675781 L 6.652344 0.675781 C 6.554688 0.675781 6.472656 0.753906 6.472656 0.847656 L 6.472656 2.375 C 6.472656 2.460938 6.554688 2.542969 6.652344 2.542969 L 7.011719 2.542969 C 7.105469 2.542969 7.191406 2.460938 7.191406 2.375 Z M 9.347656 2.03125 L 9.347656 8.8125 C 9.347656 9.183594 9.023438 9.488281 8.628906 9.488281 L 0.722656 9.488281 C 0.328125 9.488281 0 9.183594 0 8.8125 L 0 2.03125 C 0 1.664062 0.328125 1.355469 0.722656 1.355469 L 1.4375 1.355469 L 1.4375 0.847656 C 1.4375 0.378906 1.839844 0 2.335938 0 L 2.695312 0 C 3.1875 0 3.59375 0.378906 3.59375 0.847656 L 3.59375 1.355469 L 5.753906 1.355469 L 5.753906 0.847656 C 5.753906 0.378906 6.160156 0 6.652344 0 L 7.011719 0 C 7.507812 0 7.910156 0.378906 7.910156 0.847656 L 7.910156 1.355469 L 8.628906 1.355469 C 9.023438 1.355469 9.347656 1.664062 9.347656 2.03125 Z M 9.347656 2.03125 " />
+                                        </svg>
+                                        <time datetime="2020-01-28T19:01:26+03:00"> 28 january, 2020</time>
+                                    </p>
+                                    <a class="blog-info__avtar" href="#">
+                                        <svg class="blog-info__svg" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="6pt" height="9pt"
+                                            viewBox="0 0 9 10" version="1.1">
+                                            <path style=" stroke:none;fill-rule:nonzero;fill:black;fill-opacity:1;"
+                                                d="M 6.300781 5.9375 C 5.722656 5.9375 5.445312 6.25 4.5 6.25 C 3.554688 6.25 3.277344 5.9375 2.699219 5.9375 C 1.210938 5.9375 0 7.113281 0 8.5625 L 0 9.0625 C 0 9.578125 0.433594 10 0.964844 10 L 8.035156 10 C 8.566406 10 9 9.578125 9 9.0625 L 9 8.5625 C 9 7.113281 7.789062 5.9375 6.300781 5.9375 Z M 8.035156 9.0625 L 0.964844 9.0625 L 0.964844 8.5625 C 0.964844 7.632812 1.742188 6.875 2.699219 6.875 C 2.992188 6.875 3.46875 7.1875 4.5 7.1875 C 5.539062 7.1875 6.003906 6.875 6.300781 6.875 C 7.257812 6.875 8.035156 7.632812 8.035156 8.5625 Z M 4.5 5.625 C 6.097656 5.625 7.394531 4.367188 7.394531 2.8125 C 7.394531 1.257812 6.097656 0 4.5 0 C 2.902344 0 1.605469 1.257812 1.605469 2.8125 C 1.605469 4.367188 2.902344 5.625 4.5 5.625 Z M 4.5 0.9375 C 5.5625 0.9375 6.429688 1.78125 6.429688 2.8125 C 6.429688 3.84375 5.5625 4.6875 4.5 4.6875 C 3.4375 4.6875 2.570312 3.84375 2.570312 2.8125 C 2.570312 1.78125 3.4375 0.9375 4.5 0.9375 Z M 4.5 0.9375 " />
+                                        </svg>
+                                        by admin
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="insights__item">
+                        <article class="insights__cart product">
+                            <a class="insights__link" href="#">
+                                <img class="insights__img" src="images/insights/room3.jpg"
+                                    alt="Rncididunt ut labore et dolore magna aliqua. Ut enim">
+                            </a>
+                            <div class="insights__box">
+                                <a class="insights__news" href="#">News</a>
+                                <a class="insights__link" href="#">
+                                    <h3 class="insights__subtitle">
+                                        Rncididunt ut labore et dolore magna aliqua. Ut enim Aonsectetur adipisicing
+                                    </h3>
+                                </a>
+                                <div class="insights__info blog-info ">
+                                    <p class="blog-info__calendar">
+                                        <svg class="blog-info__svg" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="6pt" height="9pt"
+                                            viewBox="0 0 10 10" version="1.1">
+                                            <path style=" stroke:none;fill-rule:nonzero;fill:black;fill-opacity:1;"
+                                                d="M 0.722656 8.8125 L 2.335938 8.8125 L 2.335938 7.285156 L 0.722656 7.285156 Z M 2.695312 8.8125 L 4.496094 8.8125 L 4.496094 7.285156 L 2.695312 7.285156 Z M 0.722656 6.945312 L 2.335938 6.945312 L 2.335938 5.253906 L 0.722656 5.253906 Z M 2.695312 6.945312 L 4.496094 6.945312 L 4.496094 5.253906 L 2.695312 5.253906 Z M 0.722656 4.917969 L 2.335938 4.917969 L 2.335938 3.386719 L 0.722656 3.386719 Z M 4.851562 8.8125 L 6.652344 8.8125 L 6.652344 7.285156 L 4.851562 7.285156 Z M 2.695312 4.917969 L 4.496094 4.917969 L 4.496094 3.386719 L 2.695312 3.386719 Z M 7.011719 8.8125 L 8.628906 8.8125 L 8.628906 7.285156 L 7.011719 7.285156 Z M 4.851562 6.945312 L 6.652344 6.945312 L 6.652344 5.253906 L 4.851562 5.253906 Z M 2.878906 2.375 L 2.878906 0.847656 C 2.878906 0.753906 2.792969 0.675781 2.695312 0.675781 L 2.335938 0.675781 C 2.242188 0.675781 2.15625 0.753906 2.15625 0.847656 L 2.15625 2.375 C 2.15625 2.460938 2.242188 2.542969 2.335938 2.542969 L 2.695312 2.542969 C 2.792969 2.542969 2.878906 2.460938 2.878906 2.375 Z M 7.011719 6.945312 L 8.628906 6.945312 L 8.628906 5.253906 L 7.011719 5.253906 Z M 4.851562 4.917969 L 6.652344 4.917969 L 6.652344 3.386719 L 4.851562 3.386719 Z M 7.011719 4.917969 L 8.628906 4.917969 L 8.628906 3.386719 L 7.011719 3.386719 Z M 7.191406 2.375 L 7.191406 0.847656 C 7.191406 0.753906 7.105469 0.675781 7.011719 0.675781 L 6.652344 0.675781 C 6.554688 0.675781 6.472656 0.753906 6.472656 0.847656 L 6.472656 2.375 C 6.472656 2.460938 6.554688 2.542969 6.652344 2.542969 L 7.011719 2.542969 C 7.105469 2.542969 7.191406 2.460938 7.191406 2.375 Z M 9.347656 2.03125 L 9.347656 8.8125 C 9.347656 9.183594 9.023438 9.488281 8.628906 9.488281 L 0.722656 9.488281 C 0.328125 9.488281 0 9.183594 0 8.8125 L 0 2.03125 C 0 1.664062 0.328125 1.355469 0.722656 1.355469 L 1.4375 1.355469 L 1.4375 0.847656 C 1.4375 0.378906 1.839844 0 2.335938 0 L 2.695312 0 C 3.1875 0 3.59375 0.378906 3.59375 0.847656 L 3.59375 1.355469 L 5.753906 1.355469 L 5.753906 0.847656 C 5.753906 0.378906 6.160156 0 6.652344 0 L 7.011719 0 C 7.507812 0 7.910156 0.378906 7.910156 0.847656 L 7.910156 1.355469 L 8.628906 1.355469 C 9.023438 1.355469 9.347656 1.664062 9.347656 2.03125 Z M 9.347656 2.03125 " />
+                                        </svg>
+                                        <time datetime="2020-01-28T19:01:26+03:00"> 28 january, 2020</time>
+                                    </p>
+                                    <a class="blog-info__avtar" href="#">
+                                        <svg class="blog-info__svg" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="6pt" height="9pt"
+                                            viewBox="0 0 9 10" version="1.1">
+                                            <path style=" stroke:none;fill-rule:nonzero;fill:black;fill-opacity:1;"
+                                                d="M 6.300781 5.9375 C 5.722656 5.9375 5.445312 6.25 4.5 6.25 C 3.554688 6.25 3.277344 5.9375 2.699219 5.9375 C 1.210938 5.9375 0 7.113281 0 8.5625 L 0 9.0625 C 0 9.578125 0.433594 10 0.964844 10 L 8.035156 10 C 8.566406 10 9 9.578125 9 9.0625 L 9 8.5625 C 9 7.113281 7.789062 5.9375 6.300781 5.9375 Z M 8.035156 9.0625 L 0.964844 9.0625 L 0.964844 8.5625 C 0.964844 7.632812 1.742188 6.875 2.699219 6.875 C 2.992188 6.875 3.46875 7.1875 4.5 7.1875 C 5.539062 7.1875 6.003906 6.875 6.300781 6.875 C 7.257812 6.875 8.035156 7.632812 8.035156 8.5625 Z M 4.5 5.625 C 6.097656 5.625 7.394531 4.367188 7.394531 2.8125 C 7.394531 1.257812 6.097656 0 4.5 0 C 2.902344 0 1.605469 1.257812 1.605469 2.8125 C 1.605469 4.367188 2.902344 5.625 4.5 5.625 Z M 4.5 0.9375 C 5.5625 0.9375 6.429688 1.78125 6.429688 2.8125 C 6.429688 3.84375 5.5625 4.6875 4.5 4.6875 C 3.4375 4.6875 2.570312 3.84375 2.570312 2.8125 C 2.570312 1.78125 3.4375 0.9375 4.5 0.9375 Z M 4.5 0.9375 " />
+                                        </svg>
+                                        by admin
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="partners">
+                <div class="container container--sm">
+                    <ul class="partners__list">
+                        <li class="partners__item">
+                            <img class="partners__img" src="images/partners/partners1.png" alt="peterson stephanie">
+                        </li>
+                        <li class="partners__item">
+                            <img class="partners__img" src="images/partners/partners2.png" alt="kmn">
+                        </li>
+                        <li class="partners__item">
+                            <img class="partners__img" src="images/partners/partners3.png" alt="chainforce">
+                        </li>
+                        <li class="partners__item">
+                            <img class="partners__img" src="images/partners/partners4.png" alt="nextg3n">
+                        </li>
+                        <li class="partners__item">
+                            <img class="partners__img" src="images/partners/partners5.png" alt="vintage">
+                        </li>
+                        <li class="partners__item">
+                            <img class="partners__img" src="images/partners/partners1.png" alt="peterson stephanie">
+                        </li>
+                        <li class="partners__item">
+                            <img class="partners__img" src="images/partners/partners2.png" alt="kmn">
+                        </li>
+                        <li class="partners__item">
+                            <img class="partners__img" src="images/partners/partners3.png" alt="chainforce">
+                        </li>
+                        <li class="partners__item">
+                            <img class="partners__img" src="images/partners/partners4.png" alt="nextg3n">
+                        </li>
+                        <li class="partners__item">
+                            <img class="partners__img" src="images/partners/partners5.png" alt="vintage">
+                        </li>
+                        <li class="partners__item">
+                            <img class="partners__img" src="images/partners/partners1.png" alt="peterson stephanie">
+                        </li>
+                        <li class="partners__item">
+                            <img class="partners__img" src="images/partners/partners2.png" alt="kmn">
+                        </li>
+                        <li class="partners__item">
+                            <img class="partners__img" src="images/partners/partners3.png" alt="chainforce">
+                        </li>
+                        <li class="partners__item">
+                            <img class="partners__img" src="images/partners/partners4.png" alt="nextg3n">
+                        </li>
+                        <li class="partners__item">
+                            <img class="partners__img" src="images/partners/partners5.png" alt="vintage">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container container--sm">
+            <div class="footer__top">
+                <div class="footer__item footer__item--order ">
+                    <a class="logo  footer__logo" href="#">
+                        <img src="images/logo.png" alt="logo">
+                    </a>
+                    <address class="footer__info">
+                        <a class="footer__link" href="#">
+                            <span>Address:</span>
+                            4772 Wines Lane
+                            <p>Houston, TX 77032</p>
+                        </a>
+                        <a class="footer__link" href="tel:+8323475843">
+                            <span>Telephone:</span>
+                            +832-347-5843
+                        </a>
+                        <a class="footer__link" href="mailto:contact@glee.com">
+                            <span>Email:</span>
+                            contact@Glee.com
+                        </a>
+                    </address>
+                </div>
+                <div class="footer__item">
+                    <span class="footer__title">
+                        Services
+                    </span>
+                    <ul class="footer__text">
+                        <li>
+                            <a class="footer__link" href="#">
+                                About us
+                            </a>
+                        </li>
+                        <li>
+                            <a class="footer__link" href="#">
+                                Return Policy
+                            </a>
+                        </li>
+                        <li>
+                            <a class="footer__link" href="#">
+                                Our Blog
+                            </a>
+                        </li>
+                        <li>
+                            <a class="footer__link" href="#">
+                                Contact Us
+                            </a>
+                        </li>
+                        <li>
+                            <a class="footer__link" href="#">
+                                Terms & Condition
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__item">
+                    <span class="footer__title">
+                        Account
+                    </span>
+                    <ul class="footer__text">
+                        <li>
+                            <a class="footer__link" href="#">
+                                Your Account
+                            </a>
+                        </li>
+                        <li>
+                            <a class="footer__link" href="#">
+                                Checkout
+                            </a>
+                        </li>
+                        <li>
+                            <a class="footer__link" href="#">
+                                Login
+                            </a>
+                        </li>
+                        <li>
+                            <a class="footer__link" href="#">
+                                Register
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__item">
+                    <span class="footer__title">
+                        Newsletter
+                    </span>
+                    <div class="footer__text">
+                        <p>
+                            Subscribe by our newsletter and get update protidin.
+                        </p>
+                    </div>
+                    <form class="footer__form">
+                        <label class="sr-only" for="email-input">
+                            Enter your email
+                        </label>
+                        <input class="footer__input" id="email-input" type="email" name="email"
+                            placeholder="Email address" required
+                            oninvalid="this.setCustomValidity('fill in this field!')">
+                        <button class="footer__btn" type="submit">
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copy">
+                    ©2020 CopyRight Example. All rights reserved.
+                </p>
+                <ul class="footer__list">
+                    <li class="footer__item-nav">
+                        <a class="footer__link-nav" href="#">
+                            Home
+                        </a>
+                    </li>
+                    <li class="footer__item-nav">
+                        <a class="footer__link-nav" href="#">
+                            About
+                        </a>
+                    </li>
+                    <li class="footer__item-nav">
+                        <a class="footer__link-nav" href="#">
+                            Blog
+                        </a>
+                    </li>
+                    <li class="footer__item-nav">
+                        <a class="footer__link-nav" href="#">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.min.js"></script>
+
+</body>
+</html>

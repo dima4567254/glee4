@@ -1,0 +1,94 @@
+$ac: #fcd7b6;
+$silver:#8b8b8b;
+$silver2: #b3b7b5;
+$silver3:#7b7b7b;
+$silver4:#979ba0;
+$silver5:#9e9e9e;
+$antique:#fde7d3;
+$default: #243f4d;
+$title: #436372;
+$Cream: #feefe2;
+$Crayola: #c2d2db;
+$red: #e72828;
+$red1 :#fe3e57;
+$red2 :#fb0909;
+$orange: #ffa500;
+$blue1: #4c636e;
+$blue2: #1638cc;
+$blue3: #234969;
+$blue4: #a3bbc8;
+$blue5: #a2bac7;
+$blue6:#1f2044;
+$blue7:#a3bac7;
+$black: #000000;
+$black1: #000000;
+$black2: #191919;
+$black3:#262626;
+$black4: #222933;
+$black5:#222222;
+$black6: #333333;
+$black7: #414141;
+$green1:#28e73e;
+$white: #ffffff;
+$white2: #eef2f5;
+$white3: #fef7f0;
+$white4: #e8e4df;
+$white5:#fefefe;
+$white6:#fafafa;
+$white7:#dae4e9;
+$white8:#e5e5e5;
+$white9:#fbfbfb;
+$white10:#fffefe;
+$white11: #f2f2f2;
+$white12:#f8f8f8;
+$white13:#ffffff;
+$white14: #edf1f4;
+$white15:#ebeef3;
+$grey1:#4c4c4c;
+$grey2:#666666;
+$grey3:#585858;
+$grey4:#69778a;
+$grey5:#e0e0e0;
+$grey6: #9a9a9a;
+$grey7:#ebebeb;
+$grey8:#b8b8b8;
+$grey9: #999999;
+$grey10: #8d8d8d;
+$grey11: #bfbfbf;
+$green: #14B4BE;
+$Coral:#565872;
+$Smoke: #f6f6f6;
+$yellow:#ffcc00;
+
+$dmsans: 'DMSans',
+sans-serif;
+
+$poppins: 'Poppins',
+sans-serif;
+
+$rubik: 'Rubik',
+sans-serif;
+
+@function max($numbers...) {
+    @return m#{a}x(#{$numbers});
+}
+
+@function min($numbers...) {
+    @return m#{i}n(#{$numbers});
+}
+
+@mixin line-clamp($line-clamp, ) {
+    display: -webkit-box;
+    -webkit-line-clamp: $line-clamp;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    
+}
+
+@mixin line-height($font-size, $line-height, ) {
+
+    line-height: ( $line-height / $font-size)
+}
+/*
+@include clamp(5);
+*/
